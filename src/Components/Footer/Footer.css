@@ -1,0 +1,64 @@
+.footer {
+    background-color: #063d3f;
+    padding: 50px;
+    color: #ffffff; /* White text */
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Adds space between items */
+}
+
+.Fsocialicon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adjusts the layout on smaller screens */
+    gap: 10px; /* Adds space between social icons */
+}
+
+.copyright{
+    font-size: small;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footercontent {
+        flex-direction: column; /* Stacks content vertically */
+        align-items: center;
+    }
+
+    .Fsocialicon {
+        justify-content: center; /* Center icons */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px; /* Reduces padding on smaller screens */
+    }
+
+    .footercontent {
+        gap: 10px; /* Reduces space between items */
+    }
+
+    .Fsocialicon {
+        flex-wrap: wrap;
+        gap: 5px; /* Further reduces space between icons */
+    }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .copyright {
+        font-size: 0.9rem; /* Slightly smaller font for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .copyright {
+        font-size: 0.5rem; /* Even smaller font for very small screens */
+    }
+}

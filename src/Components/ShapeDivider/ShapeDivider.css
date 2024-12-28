@@ -1,0 +1,44 @@
+.custom-shape-divider-bottom-1732524611 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1732524611 svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-bottom-1732524611 .shape-fill {
+    fill: #0a7075;
+}
+
+/* For 13.6-inch laptops */
+@media (max-width: 1024px) { 
+    .custom-shape-divider-bottom-1732524611 svg {
+      width: calc(120% + 1.3px); /* Adjust width */
+      height: 100px; /* Adjust height */
+    }
+  }
+
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1732524611 svg {
+        width: calc(155% + 1.3px);
+        height: 100px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1732524611 svg {
+        width: calc(141% + 1.3px);
+        height: 0px;
+    }
+}

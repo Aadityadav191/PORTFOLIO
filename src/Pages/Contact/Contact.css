@@ -1,0 +1,65 @@
+.contactpage{
+  /* background-image: linear-gradient(10deg,#939494 40%,  #acacac 46%); */
+  padding: 40px;
+  background-color: #0c969c ;
+  
+}
+
+.ContHeader{
+    font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  align-content: center;
+  margin-bottom: 3%;
+}
+
+.container {
+  /* background-image: linear-gradient(100deg, #a6a6a6 50%, #b7b7b7 46%); */
+  background-image: linear-gradient(100deg,#0c969c 50%, #0a7075  46%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 20px; /* Adds space between items */
+}
+
+.contactimage {
+  /* mix-blend-mode: multiply; */
+  width: 100%; /* Make the image take full width of its container */
+  max-width: 550px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+  .contactimage {
+      max-width: 300px; /* Reduce the maximum width for tablets */
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .contactimage {
+      max-width: 200px; /* Reduce the maximum width further for mobiles */
+  }
+}
+
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      padding: 20px; /* Increase padding */
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .container {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+

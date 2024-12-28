@@ -1,0 +1,23 @@
+
+.SkillsPage{
+     /* background-image: linear-gradient(10deg,#939494 40%,  #acacac 46%);  Makes background different color  */
+     background-image: linear-gradient(30deg,#0a7075 40%, #0c969c 46%);
+     padding: 50px;
+} 
+
+
+.skilltitle{
+    font-family: cursive;
+    margin-bottom: 4%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.skillsCards{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4rem;
+   justify-content:center;   
+}
