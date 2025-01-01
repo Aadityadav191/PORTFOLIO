@@ -1,6 +1,7 @@
 .aboutpage {
   background-image: linear-gradient(25deg, #0c969c 40%, #0a7075 50%);
   padding: 60px;
+  /* margin-top:10px ; */
 }
 
 /* Container styles */
@@ -45,7 +46,9 @@
 @media (max-width: 1024px) { /* For laptops with a 13.6-inch screen */
   .aboutpage {
     padding: 0px;
-    background-color: aquamarine;
+    background-image: linear-gradient(25deg, #0c969c 40%, #0a7075 50%);
+    margin-top: 0rem;
+
   }
   .aboutimage {
     width: 350px;
