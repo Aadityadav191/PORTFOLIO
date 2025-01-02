@@ -1,7 +1,6 @@
 
 .SkillsPage{
-     /* background-image: linear-gradient(10deg,#939494 40%,  #acacac 46%);  Makes background different color  */
-     background-image: linear-gradient(30deg,#0a7075 40%, #0c969c 46%);
+     background: radial-gradient(circle, #e2e8f0, #bdcddf);
      padding: 50px;
 } 
 

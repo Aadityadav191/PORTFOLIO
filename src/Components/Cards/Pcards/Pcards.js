@@ -21,14 +21,11 @@ export default function Pcards(props) {
             {props.Description}
           </p>
 
-          <a href="https://aadityadav.com.np/" target="blank">
+          <a href={props.link} target="blank">
             <button className="Pcard__button">Live Demo</button>
           </a>
 
-          <a
-            href="https://github.com/Aadityadav191?fbclid=IwAR0FbuwJThpBy_AkUBR9Yu3CfTT9ljJZia-gzojoO2wNINMvzcH83ETQdTg"
-            target="blank"
-          >
+          <a href={props.Github} target="blank">
             <button className="Pcard__button secondary">Source Code</button>
           </a>
         </div>

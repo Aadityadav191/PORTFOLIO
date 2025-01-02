@@ -1,98 +1,17 @@
-/* .Pcard {
-  position: relative;
-  width: 340px;
-  aspect-ratio: 16/9;
-  background-color:  #0a7075;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 4px #0a5357;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.Pcard svg {
-  width: 48px;
-  fill: #333;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card__image {
-  width: 100%;
-  height: 100%;
-}
-
-.Pcard:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
-
-.Pcard__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #b0afaf;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.Pcard:hover .Pcard__content {
-  transform: rotateX(0deg);
-}
-
-.Pcard__title {
-  margin: 0;
-  font-size: 20px;
-  color: #333;
-  font-weight: 700;
-}
-
-.Pcard:hover svg {
-  scale: 0;
-}
-
-.Pcard__description {
-  margin: 10px 0 10px;
-  font-size: 12px;
-  color: #777;
-  line-height: 1.4;
-}
-
-.Pcard__button {
-  padding: 9px;
-  border-radius: 8px;
-  background: #777;
-  border: none;
-  color: white;
-  margin-right: 10px;
-}
-
-.secondary {
-  background: transparent;
-  color: #777;
-  border: 1px solid #777;
-} */
 
 
 .Pcard {
   position: relative;
   width: 340px;
   aspect-ratio: 16/9;
-  background-color: #0a7075;
+  background-color: #c3cfe0;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  box-shadow: 0 0 0 4px #0a5357;
+  box-shadow: 0 0 0 4px #91a1b7;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -120,7 +39,7 @@
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #b0afaf;
+  background-color:#c3cfe0;
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -151,15 +70,16 @@
 .Pcard__button {
   padding: 9px;
   border-radius: 8px;
-  background: #777;
+  background: #9db7dc;
   border: none;
+  font-size:large;
   color: white;
   margin-right: 10px;
 }
 
 .secondary {
   background: transparent;
-  color: #777;
+  color: #000000;
   border: 1px solid #777;
 }
 

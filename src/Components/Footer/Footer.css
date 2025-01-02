@@ -1,5 +1,5 @@
 .footer {
-    background-color: #063d3f;
+    background-color: #64748b;
     padding: 50px;
     color: #ffffff; /* White text */
 }
@@ -10,6 +10,7 @@
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 20px; /* Adds space between items */
 }
+
 
 .Fsocialicon {
     display: flex;
@@ -40,7 +41,7 @@
     }
 
     .footercontent {
-        gap: 10px; /* Reduces space between items */
+        gap: 5px; /* Reduces space between items */
     }
 
     .Fsocialicon {
@@ -54,11 +55,13 @@
 @media (max-width: 768px) {
     .copyright {
         font-size: 0.9rem; /* Slightly smaller font for medium screens */
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
     .copyright {
         font-size: 0.5rem; /* Even smaller font for very small screens */
+        align-items: center;
     }
 }

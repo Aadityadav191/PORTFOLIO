@@ -1,5 +1,5 @@
 .ProjectPage{
-  background-image: linear-gradient(10deg,#0a7075 40%,  #0c969c  46%);
+  background-image: linear-gradient(10deg,#e2e8f0 40%,  #cbd5e1  46%);
  padding: 40px;
 }
 
@@ -14,7 +14,6 @@
 .project{
   display: flex;
   justify-content: space-evenly;
-  /* margin-left: 100px; */
   align-items: center;
 }
 

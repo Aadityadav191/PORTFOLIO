@@ -50,21 +50,29 @@ const projects = [
     name: "React Dashboard",
     image: DashBoard,
     Description:"A dynamic and interactive dashboard built with React.js, featuring responsive design . It includes components like charts, tables, and user management features, providing an intuitive user experience.",
+    link:"https://react-dashboard-adminpannel.netlify.app/",
+    Github:"https://github.com/Aadityadav191/React-Dashboard.git"
   },
   {
     name: "BookRenting Website",
     image: Bookrenting,
     Description:"A user-friendly Book Renting Website developed with React.js, allowing users to browse, rent, and manage books online. The platform includes features like search filters, user accounts, and rental management. ",
+    link:"https://react-dashboard-adminpannel.netlify.app/",
+    Github:"https://github.com/Aadityadav191/React-Dashboard.git"
   },
   {
     name: "Coffee Website",
     image: Plant,
     Description:"A dynamic and interactive dashboard built with React.js, featuring responsive design . It includes components like charts, tables, and user management features, providing an intuitive user experience.",
+    link:"https://react-dashboard-adminpannel.netlify.app/",
+    Github:"https://github.com/Aadityadav191/React-Dashboard.git"
   },
   {
     name: "Project 4",
     image: PortfolioIMG,
     Description:"A dynamic and interactive dashboard built with React.js, featuring responsive design . It includes components like charts, tables, and user management features, providing an intuitive user experience.",
+    link:"https://react-dashboard-adminpannel.netlify.app/",
+    Github:"https://github.com/Aadityadav191/React-Dashboard.git"
   },
 ];
 
@@ -87,6 +95,8 @@ export default function Project() {
               Project_Name={project.name}
               image={project.image}
               Description={project.Description}
+              link={project.link}
+              Github={project.Github}
             />
           ))}
         </div>
