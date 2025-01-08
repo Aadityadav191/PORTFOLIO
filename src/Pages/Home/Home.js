@@ -3,7 +3,7 @@ import "./Home.css";
 import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider";
 import Socialicon from "../../Components/Socialicon/Socialicon";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn";
-import HeroImage from "../../Assets/HeroImage.png";
+import shyammmmmmmmmmmmm from "../../Assets/shyammmmmmmmmmmmm.png";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         </section>
 
         <section className="imagesection">
-          <img src={HeroImage} className="image" alt="Girl in a jacket" />
+          <img src={shyammmmmmmmmmmmm} className="image" alt="Girl in a jacket" />
         </section>
 
         <section>
