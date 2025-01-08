@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; /* Ensure content wraps on smaller screens */
-  background: radial-gradient(circle, #e2e8f0, #bdcddf);
+  background: radial-gradient(circle, #e2e8f0, #bbcbdf);
   align-items: center;
 }
 
