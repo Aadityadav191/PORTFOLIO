@@ -2,16 +2,56 @@
 .SkillsPage{
      background: radial-gradient(circle, #e2e8f0, #bdcddf);
      padding: 50px;
-     height: 100vh; /* Default height for large screens */
+     height: 100vh; 
 } 
 /* For very small mobile devices (~320px and below) */
 @media screen and (max-width: 480px) {
     .SkillsPage {
-      padding: 30px; /* Even less padding for very small devices */
-      height: auto; /* Allow content to adjust based on screen size */
+      padding: 30px; 
+      height: auto; 
     }
   }
   
+  @media (max-width: 1920px) {
+    /* Adjustments for smaller screens, e.g., Full HD laptops */
+    .SkillsPage {
+      padding: 40px;
+      height: auto; 
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    /* Adjustments for even smaller screens, e.g., 13.6-inch laptops */
+    .SkillsPage {
+      padding: 30px;
+      height: auto; 
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    /* Tablet or small laptop sizes */
+    .SkillsPage {
+      padding: 20px;
+      height: auto; 
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .skilltitle{
     font-family: cursive;
