@@ -11,6 +11,10 @@
     gap: 20px; /* Adds space between items */
 }
 
+.Fsocialicon>a:hover {
+  transform: scale(2.1); /* Increase the size by 10% */
+  transition: transform 1s ease; /* Smooth transition */
+}
 
 .Fsocialicon {
     display: flex;
