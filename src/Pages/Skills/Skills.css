@@ -2,8 +2,16 @@
 .SkillsPage{
      background: radial-gradient(circle, #e2e8f0, #bdcddf);
      padding: 50px;
+     height: 100vh; /* Default height for large screens */
 } 
-
+/* For very small mobile devices (~320px and below) */
+@media screen and (max-width: 480px) {
+    .SkillsPage {
+      padding: 30px; /* Even less padding for very small devices */
+      height: auto; /* Allow content to adjust based on screen size */
+    }
+  }
+  
 
 .skilltitle{
     font-family: cursive;

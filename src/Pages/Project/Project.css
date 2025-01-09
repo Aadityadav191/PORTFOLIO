@@ -1,6 +1,14 @@
 .ProjectPage{
   background: radial-gradient(circle, #e2e8f0, #bdcddf);
  padding: 40px;
+ height: 100vh; /* Default height for large screens */
+}
+/* For very small mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .ProjectPage {
+    padding: 15px; /* Even less padding for very small devices */
+    height: auto;  /* Allow content to adjust based on content size */
+  }
 }
 
 .Protitle{

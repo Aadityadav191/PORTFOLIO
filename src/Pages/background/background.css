@@ -1,0 +1,39 @@
+.background {
+    background-image: url('../../Assets/macbook.png'); /* Path relative to public or src folder */
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Default height for large screens */
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+  
+  
+  /* Media Queries for responsiveness */
+  @media screen and (max-width: 1200px) {
+    .background {
+      height: 70vh; /* Adjust the height on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .background {
+      height: 60vh; /* Adjust the height on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .background {
+      height: 50vh; /* Reduce height further for mobile devices */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .background {
+      height: 30vh; /* Further reduce height on very small screens */
+    }
+  }
+  

@@ -8,6 +8,7 @@ import Project from './Pages/Project/Project';
 import Skills from './Pages/Skills/Skills';
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter } from "react-router-dom";
+import Background from './Pages/background/background';
 // import { Route, Routes } from "react-router-dom";
 
 
@@ -22,7 +23,8 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
-      <Project/> 
+      <Project/>
+      <Background/> 
       <Contact/>
       <Footer/>
       

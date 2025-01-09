@@ -4,6 +4,8 @@
   flex-wrap: wrap; /* Ensure content wraps on smaller screens */
   background: radial-gradient(circle, #e2e8f0, #bbcbdf);
   align-items: center;
+  height: 90vh; /* Default height for large screens */
+
 }
 
 /* Content Styles */
