@@ -1,6 +1,6 @@
 .contactpage{
   padding: 40px;
-  background-color: #cbd5e1 ;
+  background-color: #e1e6ed ;
   
 }
 
@@ -13,7 +13,7 @@
 }
 
 .container {
-  background-image: linear-gradient(100deg,#cbd5e1 50%, #94a3b8  46%);
+  background-image: linear-gradient(100deg,#e1e6ed 50%, #aeb9c7  46%);
   border-radius: 20px;
   padding: 20px;
   display: flex;
