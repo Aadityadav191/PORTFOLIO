@@ -1,16 +1,16 @@
 .landing {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+  flex-wrap: wrap;
   background: radial-gradient(circle, #e2e8f0, #bbcbdf);
   align-items: center;
   height: 90vh; /* Default height for large screens */
-
 }
 
 /* Content Styles */
 .content {
-  margin-bottom: 2%;
+  margin-bottom: 0%;
+  padding-left: 10px;
 }
 
 .image:hover {
@@ -29,42 +29,63 @@
 /* imagesection Styles */
 .imagesection {
   padding: 10px;
-  max-width: 100%; /* Ensure imagesection is responsive */
+  max-width: 100%;
   height: auto;
 }
 
 .image {
-    height: 550px;
-    width: 550px;
-    max-width: 100%; /* Ensure it doesn't overflow the container */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-
+  height: 550px;
+  width: 550px;
+  max-width: 100%;
+  height: auto;
+}
 
 /* Responsive Styles */
-@media (max-width: 1024px) { /* For 13.6-inch laptops */
+@media (max-width: 1024px) {
+  /* For 13.6-inch laptops */
   .text1 {
-    font-size: 50px; /* Adjust font size for smaller screens */
+    font-size: 50px;
   }
 
   .content {
-    margin: 5%; /* Reduce margins */
+    margin: 5%;
   }
 
   .imagesection {
     padding: 10px;
   }
-  
+
   .image {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
 }
 
-@media (max-width: 768px) { /* For tablets */
+/* Responsive Styles for Larger Screens */
+@media (min-width: 1024px) {
   .text1 {
-    font-size: 40px; /* Further reduce font size */
+    font-size: 60px; /* Larger font size for bigger screens */
+  }
+
+  .content {
+    margin: 0%; /* Increase margin for spacious layout */
+  }
+
+  .imagesection {
+    padding: 0px; /* Add more padding for larger layouts */
+  }
+
+  .image {
+    height: 500px; /* Larger image dimensions */
+    width: 500px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* For tablets */
+  .text1 {
+    font-size: 40px;
   }
 
   .content {
@@ -73,7 +94,6 @@
 
   .imagesection {
     padding: 15px;
-    
   }
   .image {
     height: 300px;
@@ -81,9 +101,17 @@
   }
 }
 
-@media (max-width: 480px) { /* For mobile devices */
+@media (max-width: 480px) {
+  /* For mobile devices */
+
+  .landing {
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 10px; 
+    height: 70vh; 
+  }
   .text1 {
-    font-size: 30px; /* Smaller font size */
+    font-size: 40px; /* Smaller font size */
   }
 
   .content {
@@ -100,10 +128,7 @@
   }
 
   .image {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
   }
 }
-
-
-
