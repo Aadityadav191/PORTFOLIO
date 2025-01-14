@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: radial-gradient(circle, #e2e8f0, #bbcbdf);
+  background: radial-gradient(circle, #e2e8f0, #c3d1e2);
   align-items: center;
   height: 90vh; /* Default height for large screens */
 }
@@ -84,6 +84,8 @@
 
 @media (max-width: 768px) {
   /* For tablets */
+
+  
   .text1 {
     font-size: 40px;
   }
@@ -94,6 +96,8 @@
 
   .imagesection {
     padding: 15px;
+    max-width: 90%; /* Ensure the image scales within the viewport */
+    height: auto; /* Maintain aspect ratio */
   }
   .image {
     height: 300px;
@@ -105,10 +109,10 @@
   /* For mobile devices */
 
   .landing {
-    flex-direction: column; 
-    justify-content: center; 
-    padding: 10px; 
-    height: 70vh; 
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    height: auto; /* Adjust height for mobile devices */
+    padding: 20px; /* Add some padding for better spacing */
   }
   .text1 {
     font-size: 40px; /* Smaller font size */
@@ -119,6 +123,7 @@
   }
   .imagesection {
     padding: 0px;
+    align-items: center;
   }
 
   .social {
