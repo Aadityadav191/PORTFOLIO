@@ -6,6 +6,7 @@ import nextjs from "../../Assets/nextjs.png";
 import UIUX from "../../Assets/UIUX.png";
 import wordpress from "../../Assets/wordpress.png";
 import python from "../../Assets/python.png";
+import git from "../../Assets/git.png";
 
 
 
@@ -39,7 +40,12 @@ const skillsData = [
     title: "WordPress Development",
     logo:wordpress,
     description: "Experienced in creating and customizing WordPress websites, optimizing themes, plugins, and performance."
-  }
+  },
+  {
+    title: "GIT",
+    logo:git,
+    description: "Experienced in working with Git commands such as clone, commit, branch, merge, and pull to maintain and organize projects."
+  },
   
 ];
 

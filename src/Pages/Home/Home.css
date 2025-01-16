@@ -46,7 +46,6 @@
   .text1 {
     font-size: 50px;
   }
-
   .content {
     margin: 5%;
   }
@@ -56,8 +55,8 @@
   }
 
   .image {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -81,11 +80,9 @@
   }
 }
 
-
 @media (max-width: 768px) {
   /* For tablets */
 
-  
   .text1 {
     font-size: 40px;
   }
@@ -115,7 +112,7 @@
     padding: 20px; /* Add some padding for better spacing */
   }
   .text1 {
-    font-size: 40px; /* Smaller font size */
+    font-size: 35px; /* Smaller font size */
   }
 
   .content {

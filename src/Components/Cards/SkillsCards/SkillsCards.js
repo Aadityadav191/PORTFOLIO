@@ -27,7 +27,7 @@ export default function SkillsCards(props) {
     <>
       <div className="Scard">
         <div className="Scard-image-container">
-        <img src={props.logo} style={{ width: "100px", height: "auto" }}/>
+        <img src={props.logo} alt="logo" style={{ width: "100px", height: "auto" }}/>
         </div>
         <p className="Scard-title">{props.title}</p>
         <p className="Scard-des">

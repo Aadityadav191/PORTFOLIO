@@ -13,6 +13,11 @@
     padding: 30px;
     height: auto;
   }
+  .skillsCards {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    padding-left: 2rem;
+    gap: 1.5rem; /* Further reduce the gap */
+  }
 }
 
 @media (max-width: 1920px) {
@@ -26,7 +31,8 @@
 @media (max-width: 1440px) {
   /* Adjustments for even smaller screens, e.g., 13.6-inch laptops */
   .SkillsPage {
-    padding: 30px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     height: auto;
   }
 }
@@ -52,4 +58,43 @@
   flex-wrap: wrap;
   gap: 4rem;
   justify-content: center;
+}
+
+/* For screens up to 2560px (13.6-inch laptops) */
+@media (max-width: 2560px) {
+  .skillsCards {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .skilltitle {
+    font-family: cursive;
+    font-size: 50px;
+  }
+}
+
+/* For screens up to 1920px */
+@media (max-width: 1920px) {
+  .skillsCards {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+/* For screens up to 1366px */
+@media (max-width: 1366px) {
+  .skillsCards {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    gap: 2rem; /* Reduce gap for smaller screens */
+  }
+}
+
+/* For screens below 1024px */
+@media (max-width: 1024px) {
+  .skillsCards {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 1.5rem;
+  }
 }

@@ -32,23 +32,23 @@ export default function Footer() {
             <h3 >Contact </h3>
             <br />
 
-            <div>
+            <div className="Fcontact">
             <IoCall style={{ marginRight: '8px' }}/>
               9821747900
             </div>
             <br />
 
-            <div>
+            <div className="Fcontact">
             <TfiEmail style={{ marginRight: '8px' }}/>
               yaaditya191@gmail.com
             </div>
             <br />
 
-            <cite>
-   
+            <div className="Fcontact">
             <FaLocationDot style={{ marginRight: '8px' }}/>
               New Baneshwor, Kathmandu
-            </cite>
+            </div>
+            
             <br />
           </section>
 
@@ -127,3 +127,5 @@ export default function Footer() {
     </>
   );
 }
+
+
