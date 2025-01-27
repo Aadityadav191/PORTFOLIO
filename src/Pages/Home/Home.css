@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: radial-gradient(circle, #e2e8f0, #c3d1e2);
+  background: radial-gradient(circle, #e2e8f0, #dde5ed);
   align-items: center;
   height: 90vh; /* Default height for large screens */
 }
