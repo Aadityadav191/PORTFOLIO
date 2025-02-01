@@ -13,6 +13,11 @@
 
   }
   
+  .download-link {
+    text-decoration: none; 
+  }
+  
+
   .Dbutton, .Dbutton__icon, .Dbutton__text {
     transition: all 0.3s;
   }

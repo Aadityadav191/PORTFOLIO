@@ -4,7 +4,7 @@ import "./DownloadBtn.css";
 export default function DownloadBtn() {
   return (
     <>
-      <a href="/CV.pdf" download="AadityaYadav_CV.pdf" className="download-link">
+      <a href="/CV.pdf" download="AaditYadav CV.pdf" className="download-link">
         <button
           className="Dbutton"
           type="button"
