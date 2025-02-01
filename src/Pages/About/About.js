@@ -29,7 +29,7 @@ export default function About() {
       <main className="aboutpage">
         <h1 className="Abtheader">
           {" "}
-          <u>About Me</u>{" "}
+          About Me
         </h1>
 
         <section className="about-Container">

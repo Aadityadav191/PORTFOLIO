@@ -13,9 +13,11 @@
   padding-left: 10px;
 }
 
+
+
+
 .image:hover {
-  transform: scale(1.1); /* Increase the size by 10% */
-  transition: transform 1s ease; /* Smooth transition */
+  transform: scale(0.9); 
 }
 
 /* Text Styles */
@@ -31,6 +33,7 @@
   padding: 10px;
   max-width: 100%;
   height: auto;
+  border-radius: 44% 56% 70% 30% / 30% 30% 70% 70% ;
 }
 
 .image {
@@ -38,6 +41,7 @@
   width: 550px;
   max-width: 100%;
   height: auto;
+  transition: transform 1s ease;
 }
 
 /* Responsive Styles */
@@ -63,19 +67,19 @@
 /* Responsive Styles for Larger Screens */
 @media (min-width: 1024px) {
   .text1 {
-    font-size: 60px; /* Larger font size for bigger screens */
+    font-size: 60px; 
   }
 
   .content {
-    margin: 0%; /* Increase margin for spacious layout */
+    margin: 0%; 
   }
 
   .imagesection {
-    padding: 0px; /* Add more padding for larger layouts */
+    padding: 0px; 
   }
 
   .image {
-    height: 500px; /* Larger image dimensions */
+    height: 500px;
     width: 500px;
   }
 }
@@ -88,13 +92,13 @@
   }
 
   .content {
-    margin: 3%; /* Smaller margins */
+    margin: 3%; 
   }
 
   .imagesection {
     padding: 15px;
-    max-width: 90%; /* Ensure the image scales within the viewport */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 90%; 
+    height: auto; 
   }
   .image {
     height: 300px;
@@ -106,17 +110,17 @@
   /* For mobile devices */
 
   .landing {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     justify-content: center;
-    height: auto; /* Adjust height for mobile devices */
-    padding: 20px; /* Add some padding for better spacing */
+    height: auto; 
+    padding: 20px; 
   }
   .text1 {
-    font-size: 35px; /* Smaller font size */
+    font-size: 35px; 
   }
 
   .content {
-    margin: 10%; /* Minimal margin for mobile */
+    margin: 10%; 
   }
   .imagesection {
     padding: 0px;

@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <>
     <div className='contactpage'>
-      <h1 align='center' className='ContHeader'> <u>Contact</u>  </h1>
+      <h1 align='center' className='ContHeader'> Get in Touch  </h1>
        
        <div className='container'>
           

@@ -80,7 +80,7 @@ export default function Project() {
   return (
     <div className="ProjectPage">
       <h1 className="Protitle" align="center">
-        <u>Projects </u>
+        Projects 
       </h1>
 
       <div className="project">
