@@ -9,8 +9,8 @@ export default function About() {
       skills: ["C", "C++", "Javascript", "Java", "Python"],
     },
     {
-      title: "Skills",
-      skills: ["ReactJS", "Next.js", "Wordpress", "Django", "Git"],
+      title: "Experience",
+      skills: ["Hacakthons ","workshop", "College Projects", "Full-stack developing", "Backend developing"],
     },
     {
       title: "Services",
