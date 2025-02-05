@@ -10,7 +10,7 @@ export default function About() {
     },
     {
       title: "Experience",
-      skills: ["Hacakthons ","workshop", "College Projects", "Full-stack developing", "Backend developing"],
+      skills: ["Hacakthons ","workshops", "College Projects", "Full-stack developing", "Backend developing"],
     },
     {
       title: "Services",
@@ -26,7 +26,7 @@ export default function About() {
 
   return (
     <>
-      <main className="aboutpage">
+      <main id="about" className="aboutpage">
         <h1 className="Abtheader">
           {" "}
           About Me

@@ -7,7 +7,7 @@ import Massege from '../../Assets/Massege.svg';
 export default function Contact() {
   return (
     <>
-    <div className='contactpage'>
+    <div id="contact" className='contactpage'>
       <h1 align='center' className='ContHeader'> Get in Touch  </h1>
        
        <div className='container'>

@@ -8,7 +8,7 @@ import shyammmmmmmmmmmmm from "../../Assets/shyammmmmmmmmmmmm.png";
 export default function Home() {
   return (
     <>
-      <main className="landing">
+      <main className="landing" id="home">
         <section className="content">
           <text className="text1">
             <h4> Hi There , </h4>

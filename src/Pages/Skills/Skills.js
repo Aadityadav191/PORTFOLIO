@@ -51,7 +51,7 @@ const skillsData = [
 
 export default function Skills() {
   return (
-    <div className='SkillsPage'>
+    <div id="skills"   className='SkillsPage'>
       <h1 className='skilltitle'> Skills  </h1>
       <div className='skillsCards'>
         {skillsData.map((skill, index) => (

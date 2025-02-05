@@ -78,7 +78,7 @@ const projects = [
 
 export default function Project() {
   return (
-    <div className="ProjectPage">
+    <div id="projects" className="ProjectPage">
       <h1 className="Protitle" align="center">
         Projects 
       </h1>
