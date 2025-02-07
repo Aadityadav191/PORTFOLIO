@@ -4,6 +4,8 @@ import { FaUserAlt } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-scroll";
+
 
 
 export default function Footer() {
@@ -21,11 +23,25 @@ export default function Footer() {
           <section>
             <h3>Explore</h3>
             <br />
+            <Link to="home" smooth={true} duration={500}>
             <p>Home</p>
+            </Link>
+
+            <Link to="about" smooth={true} duration={500}>
             <p>About</p>
+            </Link>
+
+            <Link to="skills" smooth={true} duration={500}>
             <p>Skills</p>
+            </Link>
+
+            <Link to="projects" smooth={true} duration={500}>
             <p>Projects</p>
+            </Link>
+
+            <Link to="contact" smooth={true} duration={500}>
             <p>Contact</p>
+            </Link>
           </section>
 
           <section >

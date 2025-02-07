@@ -12,11 +12,11 @@
 }
 .Fcontact:hover{
     transform: scale(0.9); 
-  transition: transform 1s ease; 
+    transform: translateX(7px);
 }
 
 .Fsocialicon>a:hover  {
-  transform: scale(0.7); 
+  transform: scale(1.5); 
   transition: transform 1s ease; 
 }
 
@@ -30,6 +30,14 @@
 .copyright{
     font-size: small;
 }
+
+.footercontent section p {
+    cursor: pointer; /* Change cursor to pointer to show it's clickable */
+    transition: color 0.3s ease; /* Add transition for hover effect */
+  }
+.footercontent section p:hover {
+    transform: translateX(5px);
+  }
 
 /* Responsive styles */
 @media (max-width: 768px) {
