@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css';
-import Forms from '../../Components/Forms/Forms';
+import Forms from '../../Components/Forms/Forms.js';
 import Massege from '../../Assets/Massege.svg';
 
 

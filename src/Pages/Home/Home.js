@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
-import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider";
-import Socialicon from "../../Components/Socialicon/Socialicon";
-import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn";
+import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider.js";
+import Socialicon from "../../Components/Socialicon/Socialicon.js";
+import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
 import shyammmmmmmmmmmmm from "../../Assets/shyammmmmmmmmmmmm.png";
 
 export default function Home() {

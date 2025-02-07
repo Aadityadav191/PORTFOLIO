@@ -38,7 +38,7 @@
 
 import React from "react";
 import "./Project.css";
-import Pcards from "./../../Components/Cards/Pcards/Pcards";
+import Pcards from "./../../Components/Cards/Pcards/Pcards.js";
 import projecticon from "../../Assets/projecticon.svg";
 import DashBoard from "../../Assets/DashBoard.png";
 import Plant from "../../Assets/Plant.png";

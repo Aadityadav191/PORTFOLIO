@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.css';
-import SkillsCards from './../../Components/Cards/SkillsCards/SkillsCards';
+import SkillsCards from './../../Components/Cards/SkillsCards/SkillsCards.js';
 import Reactjs from "../../Assets/Reactjs.png";
 import nextjs from "../../Assets/nextjs.png";
 import UIUX from "../../Assets/UIUX.png";

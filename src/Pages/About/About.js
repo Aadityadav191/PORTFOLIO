@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Acards from "../../Components/Cards/Acards/Acards";
+import Acards from "../../Components/Cards/Acards/Acards.js";
 import AboutIcon from "../../Assets/abouticon.svg"; 
 export default function About() {
   const cardData = [

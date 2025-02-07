@@ -1,12 +1,10 @@
 import React from 'react'
 import './Forms.css';
-import { ToastContainer,toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
 export default function Forms() {
 
   const notify = (event) =>{
     event.preventDefault(); // Prevents the default form submission or anchor navigation
-    toast("Message sent sucessesfully!");
+    alert('Thank you for contacting me, I will get back to you soon!'); // Alerts the user
   } 
 
 
@@ -24,7 +22,6 @@ export default function Forms() {
       <label htmlFor="message">Message:</label>
       <textarea id="message" name="message" required="" placeholder='Write your Message ' defaultValue={""} />
       <button type="submit" onClick={notify} >Submit</button>
-      <ToastContainer />
     </form>
   </div>
 
