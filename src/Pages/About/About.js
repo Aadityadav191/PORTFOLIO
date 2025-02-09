@@ -56,7 +56,7 @@ export default function About() {
               expand my knowledge. I'm excited about contributing to innovative
               projects and connecting with others in the tech
               community."Passionate about turning ideas into impactful digital
-              experiences."
+              experiences"
               <br />
               Feel free to explore my work, and let's collaborate!
             </blockquote>
