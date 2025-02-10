@@ -64,8 +64,8 @@ const projects = [
     name: "Coffee Website",
     image: Plant,
     Description:"A dynamic and interactive dashboard built with React.js, featuring responsive design . It includes components like charts, tables, and user management features, providing an intuitive user experience.",
-    link:"https://react-dashboard-adminpannel.netlify.app/",
-    Github:"https://github.com/Aadityadav191/React-Dashboard.git"
+    link:"https://himalayanjavacoffee.netlify.app/",
+    Github:"https://github.com/Aadityadav191/Himalayan-Java-Coffee.git"
   },
   {
     name: "Project 4",
