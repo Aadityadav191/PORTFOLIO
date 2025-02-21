@@ -137,7 +137,7 @@ export default function Footer() {
         <hr />
 
         <aside align="right" className="copyright">
-          All rights reserved. © 2024 Copyright@2024 | Powered by AADITYADAV
+          All rights reserved. © 2025 Copyright@2025 | Powered by AADITYADAV
         </aside>
       </footer>
     </>
