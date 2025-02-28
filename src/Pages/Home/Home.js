@@ -4,6 +4,7 @@ import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider.js";
 import Socialicon from "../../Components/Socialicon/Socialicon.js";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
 import shyammmmmmmmmmmmm from "../../Assets/shyammmmmmmmmmmmm.png";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -12,7 +13,14 @@ export default function Home() {
         <section className="content">
           <text className="text1">
             <h4> Hi There , </h4>
-            <span> I'm Aadit Yadav </span>
+            <motion.span
+              initial={{ width: 0 }}
+              animate={{ width: "auto" }}
+              transition={{ duration: 2.5 }}
+              className="typing-text"
+            >
+              I'm Aadit Yadav
+            </motion.span>
             <h3>A software Engineer. </h3>
           </text>
 
@@ -21,7 +29,11 @@ export default function Home() {
         </section>
 
         <section className="imagesection">
-          <img src={shyammmmmmmmmmmmm} className="image" alt="Girl in a jacket" />
+          <img
+            src={shyammmmmmmmmmmmm}
+            className="image"
+            alt="Girl in a jacket"
+          />
         </section>
 
         <section>
