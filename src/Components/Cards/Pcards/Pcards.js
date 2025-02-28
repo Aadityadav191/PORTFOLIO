@@ -1,17 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion"; 
 import "./Pcards.css";
 
 export default function Pcards(props) {
   return (
     <>
-      <div className="Pcard">
+      <motion.div
+        className="Pcard"
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 1}} 
+        viewport={{ once: true }}
+      >
         <img
           src={props.image}
           alt="Dashboard"
           className="card-image"
           style={{
-            width: "100%", // Makes the image take up 100% of the card's width
-            height: "auto", // Keeps the image's aspect ratio intact
+            width: "100%", 
+            height: "auto", 
             borderRadius: "8px", 
           }}
         />
@@ -29,7 +36,9 @@ export default function Pcards(props) {
             <button className="Pcard__button secondary">Source Code</button>
           </a>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
+
+
