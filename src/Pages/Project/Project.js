@@ -25,14 +25,14 @@ const projects = [
   {
     name: "Coffee Website",
     image: Plant,
-    Description:"A dynamic and interactive dashboard built with React.js, featuring responsive design . It includes components like charts, tables, and user management features, providing an intuitive user experience.",
+    Description:"This project is a clone of the Java Coffee website built using Reactjs.The clone demonstrates the use of React components, state management, and routing to recreate a seamless browsing experience for users.",
     link:"https://himalayanjavacoffee.netlify.app/",
     Github:"https://github.com/Aadityadav191/Himalayan-Java-Coffee.git"
   },
   {
     name: "Portfolio Website",
     image: PortfolioIMG,
-    Description:"A dynamic and interactive dashboard built with React.js, featuring responsive design . It includes components like charts, tables, and user management features, providing an intuitive user experience.",
+    Description:"A personal portfolio website built with React.js, showcasing my skills, projects, and experience with a modern design and responsive layout",
     link:"https://aadityadav.netlify.app/",
     Github:"https://github.com/Aadityadav191/React-Dashboard.git"
   },

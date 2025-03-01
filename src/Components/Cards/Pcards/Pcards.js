@@ -9,7 +9,7 @@ export default function Pcards(props) {
         className="Pcard"
         initial={{ opacity: 0, y: 50 }} 
         whileInView={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 1}} 
+        transition={{ duration: 0.5, delay: 0.75}} 
         viewport={{ once: true }}
       >
         <img
