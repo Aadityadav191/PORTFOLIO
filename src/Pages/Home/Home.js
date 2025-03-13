@@ -3,7 +3,7 @@ import "./Home.css";
 import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider.js";
 import Socialicon from "../../Components/Socialicon/Socialicon.js";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
-import shyammmmmmmmmmmmm from "../../Assets/shyammmmmmmmmmmmm.png";
+import shyammmmmmmmmmmmm from "../../Assets/HEROIMAGE.png";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
           <img
             src={shyammmmmmmmmmmmm}
             className="image"
-            alt="Girl in a jacket"
+            alt="Aadit Yadav"
           />
         </section>
 
