@@ -24,7 +24,7 @@ export default function Socialicon() {
 
 
    {/* INSTAGRAM */}
-  <a href="https://www.instagram.com/aadityadav.com_/" target='_'>
+  <a href="https://www.instagram.com/aadityadavvv/" target='_'>
   <div className="child child-2">
     <button className="button btn-2">
       <svg
