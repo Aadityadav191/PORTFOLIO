@@ -56,7 +56,7 @@ export default function Footer() {
 
             <div className="Fcontact">
             <TfiEmail style={{ marginRight: '8px' }}/>
-              yaaditya191@gmail.com
+              aadityadav.dev@gmail.com
             </div>
             <br />
 
