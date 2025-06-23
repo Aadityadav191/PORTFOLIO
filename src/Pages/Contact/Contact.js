@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 import Forms from "../../Components/Forms/Forms.js";
 import Massege from "../../Assets/Massege.svg";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
@@ -18,14 +18,9 @@ export default function Contact() {
             <img src={Massege} alt="Message Icon" className="contactimage" />
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.5, delay: 0.75 }} 
-            viewport={{ once: true }}
-          >
+          <div>
             <Forms />
-          </motion.div>
+          </div>
         </div>
       </div>
     </>

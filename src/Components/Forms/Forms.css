@@ -107,3 +107,21 @@
       background-color:  #063d3f;
     }
 }
+
+
+
+/* Error message styling */
+.contact-form .error {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: Add red border to inputs with errors */
+.contact-form input.error-input,
+.contact-form textarea.error-input {
+  border: 1px solid #e63946;
+  background-color: #fff0f0;
+}
