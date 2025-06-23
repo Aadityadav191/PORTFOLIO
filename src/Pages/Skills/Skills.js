@@ -7,7 +7,7 @@ import UIUX from "../../Assets/UIUX.png";
 import wordpress from "../../Assets/wordpress.png";
 import python from "../../Assets/python.png";
 import git from "../../Assets/git.png";
-
+import ReactNative from "../../Assets/ReactNative.png";
 const skillsData = [
   {
     title: "ReactJS Development",
@@ -28,6 +28,11 @@ const skillsData = [
     title: "UI/UX Design",
     logo: UIUX,
     description: "Proficient in crafting visually appealing interfaces, focusing on user-centric design and seamless experiences.",
+  },
+  {
+    title: "React Native Development",
+    logo: ReactNative,
+    description: "Skilled in building cross-platform mobile apps with React Native, using components, hooks, and native modules.",
   },
   {
     title: "WordPress Development",
