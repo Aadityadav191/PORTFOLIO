@@ -15,7 +15,7 @@ const projects = [
     image: ChatBot,
     Description:
       "A personal AI Chatbot App built with React.js, designed to provide users with an interactive and engaging chatbot experience using OpenAI API.",
-    link: "https://aaditgpt.netlify.app/",
+    link: "https://aadit-ai.netlify.app/",
     Github: "https://github.com/Aadityadav191/Personal-AI-Chatbot-App.git",
   },
   {
