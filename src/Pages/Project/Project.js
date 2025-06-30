@@ -8,6 +8,7 @@ import Bookrenting from "../../Assets/Bookrenting.png";
 import PortfolioIMG from "../../Assets/PortfolioIMG.png";
 import Dowry from "../../Assets/Dowry.png";
 import ChatBot from "../../Assets/ChatBot.png";
+import Khanaaa from "../../Assets/Khanaaa.png";
 
 const projects = [
   {
@@ -35,10 +36,18 @@ const projects = [
     Github: "https://github.com/Aadityadav191/React-Dashboard.git",
   },
   {
+    name: "Food Ordering App",
+    image: Khanaaa,
+    Description:
+      "A basic food ordering app built with React and Context API for state management. Styled using CSS, this app allows users to browse a list of food items and manage their cart.",
+    link: "https://khanaaaa.netlify.app//",
+    Github: "https://github.com/Aadityadav191/FoodApp",
+  },
+  {
     name: "Coffee Website",
     image: Plant,
     Description:
-      "This project is a clone of the Java Coffee website built using Reactjs.The clone demonstrates the use of React components, state management, and routing to recreate a seamless browsing experience for users.",
+      "This project is a clone of the Java Coffee website built using Reactjs.The use of React components, state management, and routing for a seamless browsing experience for users.",
     link: "https://himalayanjavacoffee.netlify.app/",
     Github: "https://github.com/Aadityadav191/Himalayan-Java-Coffee.git",
   },
