@@ -40,7 +40,7 @@ const projects = [
     image: Khanaaa,
     Description:
       "A basic food ordering app built with React and Context API for state management. Styled using CSS, this app allows users to browse a list of food items and manage their cart.",
-    link: "https://khanaaaa.netlify.app//",
+    link: "https://khanaaaa.netlify.app/",
     Github: "https://github.com/Aadityadav191/FoodApp",
   },
   {
