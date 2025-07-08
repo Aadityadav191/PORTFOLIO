@@ -1,7 +1,8 @@
 import React from "react";
 import "./About.css";
 import Acards from "../../Components/Cards/Acards/Acards.js";
-import AboutIcon from "../../Assets/abouticon.svg"; 
+import AboutIcon from "../../Assets/abouticon.svg";
+import { motion } from "framer-motion";
 export default function About() {
   const cardData = [
     {
@@ -10,7 +11,13 @@ export default function About() {
     },
     {
       title: "Experience",
-      skills: ["Hacakthons ","workshops", "College Projects", "Full-stack developing", "Backend developing"],
+      skills: [
+        "Hacakthons ",
+        "workshops",
+        "College Projects",
+        "Full-stack developing",
+        "Backend developing",
+      ],
     },
     {
       title: "Services",
@@ -27,17 +34,19 @@ export default function About() {
   return (
     <>
       <main id="about" className="aboutpage">
-        <h1 className="Abtheader">
-          {" "}
-          About Me
-        </h1>
+        <h1 className="Abtheader"> About Me</h1>
 
         <section className="about-Container">
           <div>
             <img src={AboutIcon} className="aboutimage" alt="Aadityadav" />
           </div>
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.75, delay: 1 }}
+            viewport={{ once: true }}
+          >
             <blockquote className="Atext">
               I'm <u>Aadit Yadav </u>, a passionate software engineering student
               with a keen interest in web development (Backend, Frontend), data
@@ -60,7 +69,7 @@ export default function About() {
               <br />
               Feel free to explore my work, and let's collaborate!
             </blockquote>
-          </div>
+          </motion.div>
         </section>
 
         <section className="Acards">
