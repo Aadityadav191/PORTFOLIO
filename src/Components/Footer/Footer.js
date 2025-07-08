@@ -72,7 +72,7 @@ export default function Footer() {
             <h3>Follow Me</h3>
             <br />
             <div className="Fsocialicon">
-              <a href="https://www.instagram.com/aadityadav.com_/" target="_">
+              <a href="https://www.instagram.com/aadityadavvv/" target="_">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
