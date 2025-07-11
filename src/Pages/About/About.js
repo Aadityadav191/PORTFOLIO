@@ -24,9 +24,8 @@ export default function About() {
       skills: [
         "Web Development",
         "UI/UX Design",
-        "API Integration",
-        "SEO",
-        "Maintenance",
+        "React Testing ",
+        "Performance Optimization",
       ],
     },
   ];

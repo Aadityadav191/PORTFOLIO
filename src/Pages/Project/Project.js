@@ -9,6 +9,7 @@ import PortfolioIMG from "../../Assets/PortfolioIMG.png";
 import Dowry from "../../Assets/Dowry.png";
 import ChatBot from "../../Assets/ChatBot.png";
 import Khanaaa from "../../Assets/Khanaaa.png";
+import MobileApp from "../../Assets/MobileApp.png";
 
 const projects = [
   {
@@ -63,8 +64,15 @@ const projects = [
     name: "BookRenting Website",
     image: Bookrenting,
     Description:
-      "A user-friendly Book Renting Website developed with React.js, allowing users to browse, rent, and manage books online. The platform includes features like search filters, user accounts, and rental management. ",
+      "A user-friendly Book Renting Website developed with React.js, allowing users to browse, rent, and manage books online.It includes features like search filters, user accounts, and rental management. ",
     link: "https://RentaBook.netlify.app/",
+    Github: "https://github.com/Aadityadav191/React-Dashboard.git",
+  },
+  {
+    name: "Mobile App",
+    image: MobileApp,
+    Description:
+      "Developed a cross-platform mobile app using React Native with Expo, implementing responsive UI and native features for both iOS and Android. ",
     Github: "https://github.com/Aadityadav191/React-Dashboard.git",
   },
 ];
