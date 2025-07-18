@@ -39,7 +39,7 @@
 
 .image {
   width: 15%;
-  height: 250px; /* Minimized height */
+  height: 250px; 
   max-width: 100%;
   object-fit: contain;
   transition: transform 1s ease;
@@ -49,6 +49,12 @@
 @media (max-width: 1024px) {
   .text1 {
     font-size: 50px;
+  }
+  .aadityadav{
+    font-size: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
   }
   .content {
     margin: 5%;
@@ -68,7 +74,12 @@
   .text1 {
     font-size: 60px;
   }
-
+.aadityadav{
+    font-size: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
   .content {
     margin: 0%;
   }
@@ -85,9 +96,14 @@
 
 @media (max-width: 768px) {
   .text1 {
-    font-size: 40px;
+    font-size: 60px;
   }
-
+  .aadityadav{
+    font-size: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
   .content {
     margin: 3%;
   }
@@ -98,8 +114,8 @@
     height: auto;
   }
   .image {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
 }
 
@@ -109,6 +125,15 @@
     justify-content: center;
     height: auto;
     padding: 20px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  .aadityadav {
+    font-size: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
   }
   .text1 {
     font-size: 35px;
@@ -129,7 +154,7 @@
   }
 
   .image {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
   }
 }

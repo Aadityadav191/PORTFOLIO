@@ -32,7 +32,7 @@ const projects = [
     name: "React Dashboard",
     image: DashBoard,
     Description:
-      "A dynamic and interactive dashboard built with React.js, featuring responsive design . It includes components like charts, tables, and user management features, providing an intuitive user experience.",
+      "A dynamic and interactive dashboard built with React.js, featuring responsive design .Includes components like charts, tables, and user management features.",
     link: "https://react-dashboard-adminpannel.netlify.app/",
     Github: "https://github.com/Aadityadav191/React-Dashboard.git",
   },

@@ -59,7 +59,7 @@
 @media (max-width: 480px) {
   .container {
       padding: 15px; /* Reduce padding for smaller screens */
-      background-image: linear-gradient(100deg,#cbd5e1 50%, #cbd5e1  46%);
+      background-image: linear-gradient(100deg,#202b39 50%, #212c39  46%);
       width: 20rem;
       align-items: center;
       align-content: center;
