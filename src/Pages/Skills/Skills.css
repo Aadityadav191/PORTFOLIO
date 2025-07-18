@@ -1,5 +1,5 @@
 .SkillsPage {
-  background: radial-gradient(circle, #e2e8f0, #bdcddf);
+  background: radial-gradient(circle, #1d2939e3, #1d2939);
   padding: 50px;
   height: 100vh;
 }
@@ -7,21 +7,19 @@
 
 
 
-/* For very small mobile devices (~320px and below) */
 @media screen and (max-width: 480px) {
   .SkillsPage {
     padding: 30px;
     height: auto;
   }
   .skillsCards {
-    flex-direction: column; /* Stack cards vertically on small screens */
+    flex-direction: column; 
     padding-left: 2rem;
-    gap: 1.5rem; /* Further reduce the gap */
+    gap: 1.5rem; 
   }
 }
 
 @media (max-width: 1920px) {
-  /* Adjustments for smaller screens, e.g., Full HD laptops */
   .SkillsPage {
     padding: 40px;
     height: auto;
@@ -29,7 +27,6 @@
 }
 
 @media (max-width: 1440px) {
-  /* Adjustments for even smaller screens, e.g., 13.6-inch laptops */
   .SkillsPage {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -38,7 +35,6 @@
 }
 
 @media (max-width: 1024px) {
-  /* Tablet or small laptop sizes */
   .SkillsPage {
     padding: 20px;
     height: auto;
@@ -47,6 +43,7 @@
 
 .skilltitle {
   font-family: cursive;
+  color: #ffffff;
   margin-bottom: 4%;
   font-size: 60px;
   font-weight: bold;

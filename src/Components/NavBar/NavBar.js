@@ -7,7 +7,7 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          <b>Aadityadav</b>
+          <b>AaditYadav</b>
         </a>
         <button
           className="navbar-toggler"
@@ -24,27 +24,27 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="home" smooth={true} duration={500}>
+              <Link className="nav-link" to="home" smooth={true} duration={200}>
                 <b>Home</b>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="about" smooth={true} duration={500}>
+              <Link className="nav-link" to="about" smooth={true} duration={200}>
                 <b>About</b>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="skills" smooth={true} duration={500}>
+              <Link className="nav-link" to="skills" smooth={true} duration={200}>
                 <b>Skills</b>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="projects" smooth={true} duration={500}>
+              <Link className="nav-link" to="projects" smooth={true} duration={200}>
                 <b>Projects</b>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="contact" smooth={true} duration={500}>
+              <Link className="nav-link" to="contact" smooth={true} duration={200}>
                 <b>Contact</b>
               </Link>
             </li>

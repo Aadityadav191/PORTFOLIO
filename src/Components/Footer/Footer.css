@@ -1,83 +1,82 @@
 .footer {
-    background-color: #64748b;
-    padding: 50px;
-    color: #ffffff; 
+  background-color: #121929;
+  padding: 50px;
+  color: #ffffff;
 }
 
 .footercontent {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; 
-    gap: 20px; 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.Fcontact:hover{
-    transform: scale(0.9); 
-    transform: translateX(7px);
+.Fcontact:hover {
+  transform: scale(0.9);
+  transform: translateX(7px);
 }
 
-.Fsocialicon>a:hover  {
-  transform: scale(1.5); 
-  transition: transform 1s ease; 
+.Fsocialicon > a:hover {
+  transform: scale(1.5);
+  transition: transform 1s ease;
 }
 
 .Fsocialicon {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    gap: 10px; 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.copyright{
-    font-size: small;
+.copyright {
+  font-size: small;
 }
 
 .footercontent section p {
-    cursor: pointer; /* Change cursor to pointer to show it's clickable */
-    transition: color 0.3s ease; /* Add transition for hover effect */
-  }
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 .footercontent section p:hover {
-    transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footercontent {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .footercontent {
-        flex-direction: column; 
-        align-items:flex-start;
-    }
-
-    .Fsocialicon {
-        justify-content: center; 
-    }
+  .Fsocialicon {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
-    .footer {
-        padding: 20px; 
-    }
+  .footer {
+    padding: 20px;
+  }
 
-    .footercontent {
-        gap: 5px;
-    }
+  .footercontent {
+    gap: 5px;
+  }
 
-    .Fsocialicon {
-        flex-wrap: wrap;
-        gap: 5px; 
-    }
+  .Fsocialicon {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
-
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .copyright {
-        font-size: 0.9rem; 
-        align-items: center;
-    }
+  .copyright {
+    font-size: 0.9rem;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
-    .copyright {
-        font-size: 0.5rem; 
-        align-items: center;
-    }
+  .copyright {
+    font-size: 0.5rem;
+    align-items: center;
+  }
 }

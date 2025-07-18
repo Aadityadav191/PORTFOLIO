@@ -12,16 +12,16 @@ export default function Home() {
       <main className="landing" id="home">
         <section className="content">
           <text className="text1">
-            <h4> Hi There , </h4>
+            <h5> Hi There 👋 , </h5>
             <motion.span
               initial={{ width: 0 }}
               animate={{ width: "auto" }}
               transition={{ duration: 2.5 }}
-              className="typing-text"
+              className="aadityadav"
             >
-              I'm Aadit Yadav
+              I'm  Aadit Yadav
             </motion.span>
-            <h3>A software Engineer. </h3>
+            <h4>A Software Engineer </h4>
           </text>
 
           <DownloadBtn />

@@ -73,7 +73,7 @@ const projects = [
     image: MobileApp,
     Description:
       "Developed a cross-platform mobile app using React Native with Expo, implementing responsive UI and native features for both iOS and Android. ",
-    Github: "https://github.com/Aadityadav191/React-Dashboard.git",
+    Github: "https://github.com/Aadityadav191/Mobile-APP.git",
   },
 ];
 
@@ -85,9 +85,6 @@ export default function Project() {
       </h1>
 
       <div className="project">
-        {/* <div>
-          <img src={projecticon} alt="Message Icon" className="Pimage" />
-        </div> */}
 
         <div className="projectscards">
           {projects.map((project, index) => (

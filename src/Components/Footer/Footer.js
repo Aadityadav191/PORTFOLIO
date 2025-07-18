@@ -23,23 +23,23 @@ export default function Footer() {
           <section>
             <h3>Explore</h3>
             <br />
-            <Link to="home" smooth={true} duration={500}>
+            <Link to="home" smooth={true} duration={200}>
             <p>Home</p>
             </Link>
 
-            <Link to="about" smooth={true} duration={500}>
+            <Link to="about" smooth={true} duration={200}>
             <p>About</p>
             </Link>
 
-            <Link to="skills" smooth={true} duration={500}>
+            <Link to="skills" smooth={true} duration={200}>
             <p>Skills</p>
             </Link>
 
-            <Link to="projects" smooth={true} duration={500}>
+            <Link to="projects" smooth={true} duration={200}>
             <p>Projects</p>
             </Link>
 
-            <Link to="contact" smooth={true} duration={500}>
+            <Link to="contact" smooth={true} duration={200}>
             <p>Contact</p>
             </Link>
           </section>

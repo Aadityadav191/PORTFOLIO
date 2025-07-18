@@ -1,5 +1,5 @@
 .aboutpage {
-  background-image: linear-gradient(25deg, #cbd5e1 40%, #d7dfe9 50%);
+  background-image: linear-gradient(180deg, #263343 50%, #263242 50%);
   padding: 60px;
 }
 
@@ -7,16 +7,16 @@
 .about-Container {
   display: flex;
   justify-content: space-between;
-  background: radial-gradient(circle, #e2e8f0, #cbd5e1);
+  background: radial-gradient(circle, #283849, #1c2939);
   border-radius: 30px;
 }
 
 /* Text styles */
 .Atext {
   font-size: 1.2rem;
-  font-family: cursive;
-  color: #050404;
-  border-left: 6px solid rgb(0, 0, 0);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  border-left: 6px solid #d18700;
   padding-left: 1rem;
   margin: 3rem 0;
 }
@@ -24,6 +24,7 @@
 /* Header styles */
 .Abtheader {
   font-size: 50px;
+  color: #fbfbfb;
   font-family: cursive;
   font-weight: bold;
   text-align: center;
@@ -40,12 +41,11 @@
 .Acards {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap; /* Allows cards to stack on smaller screens */
+  flex-wrap: wrap;
 }
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-  /* For laptops with a 13.6-inch screen */
   .aboutpage {
     padding: 0px;
     margin-top: 0rem;
