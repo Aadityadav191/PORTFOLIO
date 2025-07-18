@@ -15,7 +15,7 @@ export default function Footer() {
         <main className="footercontent">
           <section>
             <h1>
-            <FaUserAlt style={{ marginRight: '8px' }} />
+            <FaUserAlt style={{ marginRight: '8px' }} /> 
               AADITYADAV
             </h1>
           </section>
@@ -137,7 +137,7 @@ export default function Footer() {
         <hr />
 
         <aside align="right" className="copyright">
-          All rights reserved. © 2025 Copyright@2025 | Powered by AADITYADAV
+          All rights reserved. © Copyright@2025 | Powered by AADITYADAV
         </aside>
       </footer>
     </>

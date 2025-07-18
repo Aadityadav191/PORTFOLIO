@@ -3,6 +3,10 @@
   padding: 50px;
   color: #ffffff;
 }
+h3{
+  color: #d18701;
+  font-weight: bold;
+}
 
 .footercontent {
   display: flex;
@@ -13,11 +17,13 @@
 .Fcontact:hover {
   transform: scale(0.9);
   transform: translateX(7px);
+  color: #d18701;
 }
 
 .Fsocialicon > a:hover {
   transform: scale(1.5);
   transition: transform 1s ease;
+  color: #d18701;
 }
 
 .Fsocialicon {
@@ -29,14 +35,17 @@
 
 .copyright {
   font-size: small;
+  color: #d18701;
 }
 
 .footercontent section p {
   cursor: pointer;
   transition: color 0.3s ease;
+  font-weight: bolder;
 }
 .footercontent section p:hover {
-  transform: translateX(5px);
+ transform: scale(1.25);
+  transition: transform 1s ease;  color: #d18701;
 }
 
 /* Responsive styles */
