@@ -27,7 +27,7 @@ const skillsData = [
   {
     title: "UI/UX Design",
     logo: UIUX,
-    description: "Proficient in crafting visually appealing interfaces, focusing on user-centric design and seamless experiences.",
+    description: "Proficient in crafting visually appealing interfaces, focusing on user-centric design and seamless experiences in figma ",
   },
   {
     title: "React Native ",

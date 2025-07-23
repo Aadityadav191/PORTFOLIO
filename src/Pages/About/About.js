@@ -33,7 +33,7 @@ export default function About() {
   return (
     <>
       <main id="about" className="aboutpage">
-        <h1 className="Abtheader"> About Me</h1>
+        <h1 className="Abtheader"> About<u style={{ textDecorationColor: '#d18700' }}> Me</u> </h1>
 
         <section className="about-Container">
           <div>
