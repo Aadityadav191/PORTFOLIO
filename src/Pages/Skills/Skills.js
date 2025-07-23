@@ -10,17 +10,17 @@ import git from "../../Assets/git.png";
 import ReactNative from "../../Assets/ReactNative.png";
 const skillsData = [
   {
-    title: "ReactJS Development",
+    title: "ReactJS ",
     logo: Reactjs,
     description: "Skilled in building responsive web apps with React.js, using components, hooks, and state management.",
   },
   {
-    title: "NextJS  Development",
+    title: "NextJS  ",
     logo: nextjs,
     description: "Experienced in building fast, SEO-friendly web applications, leveraging server-side rendering, dynamic routing.",
   },
   {
-    title: "Python(Django)",
+    title: "Python (django) ",
     logo: python,
     description: "Building applications using Django, with expertise in RESTful APIs, database integration, and backend optimization.",
   },
@@ -30,12 +30,12 @@ const skillsData = [
     description: "Proficient in crafting visually appealing interfaces, focusing on user-centric design and seamless experiences.",
   },
   {
-    title: "React Native Development",
+    title: "React Native ",
     logo: ReactNative,
     description: "Skilled in building cross-platform mobile apps with React Native, using components, hooks, and native modules.",
   },
   {
-    title: "WordPress Development",
+    title: "WordPress ",
     logo: wordpress,
     description: "Experienced in creating and customizing WordPress websites, optimizing themes, plugins, and performance.",
   },
