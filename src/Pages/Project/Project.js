@@ -81,7 +81,7 @@ export default function Project() {
   return (
     <div id="projects" className="ProjectPage">
       <h1 className="Protitle" align="center">
-        Projects
+        Proje<u style={{ textDecorationColor: '#d18700' }}>cts</u>
       </h1>
 
       <div className="project">

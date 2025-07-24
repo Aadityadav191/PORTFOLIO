@@ -47,7 +47,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <blockquote className="Atext">
-              I'm <u>Aadit Yadav </u>, a passionate software engineering student
+              I'm Aadit Yadav , a passionate software engineering student
               with a keen interest in web development (Backend, Frontend), data
               science and machine learning. Currently, I'm honing my skills in
               Python development, building intuitive web applications using

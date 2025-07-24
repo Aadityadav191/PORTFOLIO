@@ -49,7 +49,7 @@ const skillsData = [
 export default function Skills() {
   return (
     <div id="skills" className="SkillsPage">
-      <h1 className="skilltitle">Skills</h1>
+      <h1 className="skilltitle">Ski<u style={{ textDecorationColor: '#d18700' }}>lls</u></h1>
       <div className="skillsCards">
         {skillsData.map((skill, index) => (
           <SkillsCards

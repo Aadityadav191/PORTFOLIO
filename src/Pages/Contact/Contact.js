@@ -10,7 +10,7 @@ export default function Contact() {
       <div id="contact" className="contactpage">
         <h1 align="center" className="ContHeader">
           {" "}
-          Get in Touch{" "}
+          Get in To<u style={{ textDecorationColor: '#d18700' }}>uch</u>{" "}
         </h1>
 
         <div className="container">
