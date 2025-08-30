@@ -23,7 +23,7 @@ export default function Home() {
             >
               I'm Aadit Yadav
             </motion.span>
-            <h4>A Software Engineer </h4>
+            <h4>A Software Developer </h4>
           </div>
 
           <DownloadBtn />
