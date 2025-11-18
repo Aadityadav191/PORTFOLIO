@@ -3,7 +3,7 @@ import "./Home.css";
 import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider.js";
 import Socialicon from "../../Components/Socialicon/Socialicon.js";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
-import shyammmmmmmmmmmmm from "../../Assets/HEROIMAGE.png";
+import shyam1 from "../../Assets/shyam1.png";
 import { motion } from "framer-motion";
 import ParticlesBackground from "../../Components/ParticleBackground/ParticleBackground.js";
 
@@ -31,7 +31,7 @@ export default function Home() {
         </section>
 
         <section className="imagesection">
-          <img src={shyammmmmmmmmmmmm} className="image" alt="Aadit Yadav" />
+          <img src={shyam1} className="image" alt="Aadit Yadav" />
         </section>
 
         <section>
