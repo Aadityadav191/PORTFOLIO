@@ -3,7 +3,7 @@ import "./About.css";
 import Acards from "../../Components/Cards/Acards/Acards.js";
 import AboutIcon from "../../Assets/abouticon.svg";
 import { motion } from "framer-motion";
-export default function About() {
+function About() {
   const cardData = [
     {
       title: "Languages",
@@ -80,3 +80,4 @@ export default function About() {
     </>
   );
 }
+export default About
