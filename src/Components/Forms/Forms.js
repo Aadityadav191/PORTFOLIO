@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Forms.css";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 export default function Forms() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ export default function Forms() {
   });
 
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -27,27 +29,48 @@ export default function Forms() {
     e.preventDefault();
     const newErrors = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    }
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-    } else {
-      alert("Thank you for contacting me, I will get back to you soon!");
-      setFormData({ name: "", email: "", message: "" });
+      return;
     }
+
+    // ---------------- EMAIL JS START ---------------- //
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_2fpgxur", // Your EmailJS Service ID
+        "template_yckyavm", // Your EmailJS Template ID
+        {
+          user_name: formData.name,
+          user_email: formData.email,
+          message: formData.message,
+        },
+        "t5iRt9vml_W1rXxN6" // Your EmailJS Public Key
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+          setLoading(false);
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Failed to send message. Please try again.");
+          setLoading(false);
+        }
+      );
+    // ---------------- EMAIL JS END ---------------- //
   };
 
   return (
     <div className="contact-form">
       <span className="heading">Contact Me :</span>
+
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <motion.input
@@ -70,20 +93,20 @@ export default function Forms() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.85 }}
           viewport={{ once: true }}
-          type="text"
+          type="email"
           name="email"
           placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
           className={errors.email ? "error-input" : ""}
         />
-        {errors.name && <div className="error">{errors.name}</div>}
+        {errors.email && <div className="error">{errors.email}</div>}
 
         <label htmlFor="message">Message:</label>
         <motion.textarea
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 0.95}}
+          transition={{ duration: 0.75, delay: 0.95 }}
           viewport={{ once: true }}
           name="message"
           placeholder="Write your Message"
@@ -92,7 +115,9 @@ export default function Forms() {
         />
         {errors.message && <div className="error">{errors.message}</div>}
 
-        <button type="submit" >Submit</button>
+        <button type="submit" disabled={loading}>
+          {loading ? "Sending..." : "Submit"}
+        </button>
       </form>
     </div>
   );
