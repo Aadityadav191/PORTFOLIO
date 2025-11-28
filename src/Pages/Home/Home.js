@@ -31,7 +31,7 @@ export default function Home() {
         </section>
 
         <section className="imagesection">
-          <img src={shyam1} className="image" alt="Aadit Yadav" />
+          <img src={shyam1} className="image" alt="Aadit Yadav" loading="lazy" />
         </section>
 
         <section>
