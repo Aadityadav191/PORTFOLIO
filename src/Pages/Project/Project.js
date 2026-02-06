@@ -81,7 +81,7 @@ export default function Project() {
   return (
     <div id="projects" className="ProjectPage">
       <h1 className="Protitle" align="center">
-        Proje<u style={{ textDecorationColor: '#d18700' }}>cts</u>
+        My Wo<u style={{ textDecorationColor: '#d18700' }}>rks</u>
       </h1>
 
       <div className="project">
