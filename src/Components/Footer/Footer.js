@@ -6,8 +6,6 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
-
-
 export default function Footer() {
   return (
     <>
@@ -15,7 +13,7 @@ export default function Footer() {
         <main className="footercontent">
           <section>
             <h1>
-            <FaUserAlt style={{ marginRight: '8px' }} /> 
+              <FaUserAlt style={{ marginRight: "8px" }} />
               AADITYADAV
             </h1>
           </section>
@@ -24,47 +22,60 @@ export default function Footer() {
             <h3>Explore</h3>
             <br />
             <Link to="home" smooth={true} duration={200}>
-            <p>Home</p>
+              <p>Home</p>
             </Link>
 
             <Link to="about" smooth={true} duration={200}>
-            <p>About</p>
+              <p>About</p>
             </Link>
 
             <Link to="skills" smooth={true} duration={200}>
-            <p>Skills</p>
+              <p>Skills</p>
             </Link>
 
             <Link to="projects" smooth={true} duration={200}>
-            <p>Projects</p>
+              <p>Projects</p>
             </Link>
 
             <Link to="contact" smooth={true} duration={200}>
-            <p>Contact</p>
+              <p>Contact</p>
             </Link>
           </section>
 
-          <section >
-            <h3 >Contact </h3>
+          <section>
+            <h3>Contact </h3>
             <br />
 
             <div className="Fcontact">
-            <IoCall style={{ marginRight: '8px' }}/>
+              <IoCall style={{ marginRight: "8px" }} />
               9821747900
             </div>
             <br />
 
             <div className="Fcontact">
-            <TfiEmail style={{ marginRight: '8px' }}/>
-              aadityadav.dev@gmail.com
+              <TfiEmail style={{ marginRight: "8px" }} />
+              <a
+                href="mailto:aadityadav.dev@gmail.com"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                aadityadav.dev@gmail.com
+              </a>
             </div>
+
             <br />
 
             <div className="Fcontact">
-            <FaLocationDot style={{ marginRight: '8px' }}/>
-              New Baneshwor, Kathmandu
+              <FaLocationDot style={{ marginRight: "8px" }} />
+              <a
+                href="https://www.google.com/maps?q=New+Baneshwor,+Kathmandu"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                New Baneshwor, Kathmandu
+              </a>
             </div>
-            
+
             <br />
           </section>
 
@@ -137,11 +148,10 @@ export default function Footer() {
         <hr />
 
         <aside align="right" className="copyright">
-          All rights reserved. © Copyright@2025 | Powered by AADITYADAV
+          All rights reserved. © Copyright@ {new Date().getFullYear()} | Powered
+          by AADITYADAV
         </aside>
       </footer>
     </>
   );
 }
-
-

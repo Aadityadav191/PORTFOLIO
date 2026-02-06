@@ -1,42 +1,40 @@
-.navbar {
-    top: 0px;
-    position: sticky;
-    background-color: #111929;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    color: #d18700; 
+.navbar.custom-nav {
+    top: 20px; /* Gives it a floating look */
+    position: fixed; /* Keeps it visible as you scroll */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the absolute element */
+    width: fit-content; /* Makes it only as wide as the links */
+    background-color: #182235e2; /* Slight transparency */
+    backdrop-filter: blur(0px); /* Modern frosted glass effect */
+    border-radius: 50px; /* Makes it a pill shape */
+    padding: 10px 30px;
+    border: 1px solid rgba(209, 135, 0, 0.3);
+    z-index: 1000;
+    
 }
-.navbar ul {
+
+.container-nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
 }
-.navbar li {
-    padding: 5px 5px;
-    transition: background-color 0.3s ease;
-    color: aliceblue;
+
+.navbar-nav {
+    flex-direction: row !important; /* Forces items to stay horizontal */
+    gap: 20px;
 }
-.navbar a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: bold;
+
+.nav-link {
+    color: aliceblue !important;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
 }
-.navbar a:hover {
-    color:#d18700;
+
+.nav-link:hover, .active {
+    color: #d18700 !important;
 }
-.navbar li .active {
-    color: #d18700;
-}
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color:#d18700;
-    margin-right: auto;
-}
-.navbar .logo:hover {
-    color: #d18700;
-    text-decoration: none;
+
+/* Hide brand and toggler for this specific "short" style */
+.navbar-toggler {
+    display: none !important;
 }
