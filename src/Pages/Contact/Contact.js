@@ -6,31 +6,36 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <>
-      <div id="contact" className="contactpage">
-        <h1 align="center" className="ContHeader">
-          {" "}
-          Get in To<u style={{ textDecorationColor: '#d18700' }}>uch</u>{" "}
-        </h1>
-
-        <div className="container">
-          <div>
-            <motion.img
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.75, delay: 0.75 }}
-              viewport={{ once: true }}
-              src={Massege}
-              alt="Message Icon"
-              className="contactimage"
-            />
-          </div>
-
-          <div>
-            <Forms />
-          </div>
-        </div>
+    <section id="contact" className="contact-section">
+      <div className="section-header">
+        <h2 className="contact-title">
+          Let's <span className="accent">Connect</span>
+        </h2>
+        <div className="title-underline"></div>
+        <p className="contact-subtitle">Have a project in mind? Reach out and let's build something great.</p>
       </div>
-    </>
+
+      <div className="contact-container">
+        <motion.div 
+          className="contact-info"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <img src={Massege} alt="Contact Illustration" className="contact-svg" />
+        </motion.div>
+
+        <motion.div 
+          className="contact-form-wrapper"
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Forms />
+        </motion.div>
+      </div>
+    </section>
   );
 }
