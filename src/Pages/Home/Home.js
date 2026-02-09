@@ -5,39 +5,65 @@ import Socialicon from "../../Components/Socialicon/Socialicon.js";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
 import shyam1 from "../../Assets/shyam1.png";
 import { motion } from "framer-motion";
-// import ParticlesBackground from "../../Components/ParticleBackground/ParticleBackground.js";
 
 export default function Home() {
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, staggerChildren: 0.2 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <>
-      <main className="landing" id="home">
-        {/* <ParticlesBackground /> */}
-        <section className="content">
-          <div className="text1">
-            <h5> Hi There 👋 , </h5>
-            <motion.span
-              initial={{ width: 0 }}
-              animate={{ width: "auto" }}
-              transition={{ duration: 2.5 }}
-              className="aadityadav"
-            >
-              I'm Aadit Yadav
-            </motion.span>
-            <h4>A Software Developer </h4>
-          </div>
+    <main className="landing" id="home">
+      <section className="hero-grid">
+        <motion.div 
+          className="content"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.h5 variants={itemVariants} className="greeting">
+            Hi There 👋
+          </motion.h5>
+          
+          <motion.h1 variants={itemVariants} className="name-title">
+            I'm <span className="highlight">Aadit Yadav</span>
+          </motion.h1>
+          
+          <motion.h4 variants={itemVariants} className="sub-text">
+            Software Developer
+          </motion.h4>
 
-          <DownloadBtn />
-          <Socialicon />
-        </section>
+          <motion.div variants={itemVariants} className="cta-wrapper">
+            <DownloadBtn />
+            <div className="social-wrapper">
+               <Socialicon />
+            </div>
+          </motion.div>
+        </motion.div>
 
-        <section className="imagesection">
-          <img src={shyam1} className="image" alt="Aadit Yadav" loading="lazy" />
-        </section>
+        <motion.div 
+          className="image-container"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="blob-bg"></div>
+          <img src={shyam1} className="profile-img" alt="Aadit Yadav" />
+        </motion.div>
+      </section>
 
-        <section>
-          <ShapeDivider />
-        </section>
-      </main>
-    </>
+      <div className="divider-container">
+        <ShapeDivider />
+      </div>
+    </main>
   );
 }
