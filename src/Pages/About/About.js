@@ -1,7 +1,9 @@
 import React from "react";
 import "./About.css";
 import Acards from "../../Components/Cards/Acards/Acards.js";
-import AboutIcon from "../../Assets/abouticon.svg";
+// import AboutIcon from "../../Assets/abouticon.svg";
+import { IconCloud } from "../../Components/IconCloud/IconCloud.jsx";
+
 import { motion } from "framer-motion";
 function About() {
   const cardData = [
@@ -30,14 +32,63 @@ function About() {
     },
   ];
 
+  const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
+
   return (
     <>
       <main id="about" className="aboutpage">
-        <h1 className="Abtheader"> About<u style={{ textDecorationColor: '#d18700' }}> Me</u> </h1>
+        <h1 className="Abtheader">
+          {" "}
+          About<u style={{ textDecorationColor: "#d18700" }}> Me</u>{" "}
+        </h1>
 
         <section className="about-Container">
-          <div>
-            <img src={AboutIcon} className="aboutimage" alt="Aadityadav" />
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              height: "100%",
+              width: "100%",
+              maxWidth: "32rem",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+              borderRadius: "0.5rem",
+              padding: "2rem 5rem 5rem 5rem",
+            }}
+          >
+            <IconCloud iconSlugs={slugs} />
           </div>
 
           <motion.div
@@ -47,11 +98,11 @@ function About() {
             viewport={{ once: true }}
           >
             <blockquote className="Atext">
-              I'm Aadit Yadav , a passionate software engineering student
-              with a keen interest in web development (Backend, Frontend), data
-              science and machine learning. Currently, I'm honing my skills in
-              Python development, building intuitive web applications using
-              React, and exploring the world of AI and data-driven technologies.
+              I'm Aadit Yadav , a passionate software engineering student with a
+              keen interest in web development (Backend, Frontend), data science
+              and machine learning. Currently, I'm honing my skills in Python
+              development, building intuitive web applications using React, and
+              exploring the world of AI and data-driven technologies.
               <br />
               <br />
               Throughout my learning journey, I've worked on projects involving
@@ -80,4 +131,4 @@ function About() {
     </>
   );
 }
-export default About
+export default About;

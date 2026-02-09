@@ -8,6 +8,7 @@ import Project from "./Pages/Project/Project.js";
 import Skills from "./Pages/Skills/Skills.js";  
 import Footer from "./Components/Footer/Footer.js"; 
 import Background from "./Pages/background/background.js";
+import TimelinePage from "./Pages/TimelinePage/TimelinePage.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 
       <Home />
       <About />
+      <TimelinePage />
       <Skills /> 
       <Project />
       <Background />

@@ -5,13 +5,13 @@ import Socialicon from "../../Components/Socialicon/Socialicon.js";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
 import shyam1 from "../../Assets/shyam1.png";
 import { motion } from "framer-motion";
-import ParticlesBackground from "../../Components/ParticleBackground/ParticleBackground.js";
+// import ParticlesBackground from "../../Components/ParticleBackground/ParticleBackground.js";
 
 export default function Home() {
   return (
     <>
       <main className="landing" id="home">
-        <ParticlesBackground />
+        {/* <ParticlesBackground /> */}
         <section className="content">
           <div className="text1">
             <h5> Hi There 👋 , </h5>
