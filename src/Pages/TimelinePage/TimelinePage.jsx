@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement 
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { School, Briefcase, GraduationCap, BookOpen, Star } from 'lucide-react';
+import { School, Briefcase, GraduationCap, BookOpen } from 'lucide-react';
 
 const ExperienceTimeline = () => {
   const theme = {
