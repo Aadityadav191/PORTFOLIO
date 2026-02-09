@@ -4,13 +4,13 @@ import {
   VerticalTimelineElement 
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { School, Briefcase, GraduationCap, BookOpen } from 'lucide-react';
+import { School, Briefcase, GraduationCap, BookOpen, } from 'lucide-react';
 
 const ExperienceTimeline = () => {
   const theme = {
     background: '#253242', // Dark Navy
     cardBg: '#1b2939',     // Slightly lighter navy for cards
-    accent: '#f59e0b',     // Gold/Orange accent
+    accent: '#a5711c',     // Gold/Orange accent
     textMain: '#ffffff',
     textSecondary: '#cbd5e1'
   };
