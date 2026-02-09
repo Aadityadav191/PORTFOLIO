@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Skills.css";
 
-import SkillsCards from "./../../Components/Cards/SkillsCards/SkillsCards.js";
+// import SkillsCards from "./../../Components/Cards/SkillsCards/SkillsCards.js";
 
 import Reactjs from "../../Assets/Reactjs.png";
 
