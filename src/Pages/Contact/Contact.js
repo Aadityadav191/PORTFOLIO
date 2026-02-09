@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact-section">
+    <>
+      <section id="contact" className="contact-section">
       <div className="section-header">
         <h2 className="contact-title">
           Let's <span className="accent">Connect</span>
@@ -24,6 +25,10 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <img src={Massege} alt="Contact Illustration" className="contact-svg" />
+          <div className="contact-details">
+             {/* You can add your email or location here later */}
+             <p>Ready to collaborate on your next digital adventure.</p>
+          </div>
         </motion.div>
 
         <motion.div 
@@ -37,5 +42,6 @@ export default function Contact() {
         </motion.div>
       </div>
     </section>
+    </>
   );
 }
