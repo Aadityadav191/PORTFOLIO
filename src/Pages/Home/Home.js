@@ -7,57 +7,63 @@ import shyam1 from "../../Assets/shyam1.png";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, staggerChildren: 0.2 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0 },
-  };
-
   return (
     <main className="landing" id="home">
+      {/* Decorative background elements */}
+      <div className="bg-glow-1"></div>
+      <div className="bg-glow-2"></div>
+
       <section className="hero-grid">
         <motion.div 
-          className="content"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
+          className="hero-content"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          <motion.h5 variants={itemVariants} className="greeting">
-            Hi There 👋
-          </motion.h5>
+          <div className="badge">Available for Work</div>
+          <h5 className="greeting">Hi There, I'm</h5>
+          <h1 className="name-title">
+            Aadit <span className="highlight">Yadav</span>
+          </h1>
           
-          <motion.h1 variants={itemVariants} className="name-title">
-            I'm <span className="highlight">Aadit Yadav</span>
-          </motion.h1>
-          
-          <motion.h4 variants={itemVariants} className="sub-text">
-            Software Developer
-          </motion.h4>
+          <div className="role-container">
+            <span className="role-text">Software Developer</span>
+            <div className="role-underline"></div>
+          </div>
 
-          <motion.div variants={itemVariants} className="cta-wrapper">
+          <p className="hero-description">
+            Crafting scalable web applications and intuitive digital experiences with a focus on modern performance and clean code.
+          </p>
+
+          <div className="cta-group">
             <DownloadBtn />
-            <div className="social-wrapper">
+            <div className="social-container">
                <Socialicon />
             </div>
-          </motion.div>
+          </div>
         </motion.div>
 
         <motion.div 
-          className="image-container"
-          initial={{ opacity: 0, scale: 0.8 }}
+          className="hero-image-wrapper"
+          initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="blob-bg"></div>
-          <img src={shyam1} className="profile-img" alt="Aadit Yadav" />
+          <div className="image-border-gradient">
+            <div className="image-inner-container">
+                <img src={shyam1} className="profile-img" alt="Aadit Yadav" />
+            </div>
+          </div>
+          
+          {/* Floating Experience Card */}
+          <motion.div 
+            className="floating-card"
+            animate={{ y: [0, -15, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <span className="stat-number">10+</span>
+            <span className="stat-text">Projects Finished</span>
+          </motion.div>
         </motion.div>
       </section>
 
