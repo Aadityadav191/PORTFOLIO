@@ -3,7 +3,8 @@ import "./Home.css";
 import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider.js";
 import Socialicon from "../../Components/Socialicon/Socialicon.js";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
-import shyam1 from "../../Assets/shyam1.png";
+// import shyam1 from "../../Assets/shyam1.png";
+import shyam1 from "../../Assets/9999.jpeg";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="badge">Available for Work</div>
+          {/* <div className="badge">Available for Work</div> */}
           <h5 className="greeting">Hi There, I'm</h5>
           <h1 className="name-title">
             Aadit <span className="highlight">Yadav</span>
