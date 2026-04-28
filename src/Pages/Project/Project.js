@@ -8,6 +8,7 @@ import Bookrenting from "../../Assets/Bookrenting.png";
 import PortfolioIMG from "../../Assets/PortfolioIMG.png";
 import Dowry from "../../Assets/Dowry.png";
 import ChatBot from "../../Assets/ChatBot.png";
+import shipifyy from "../../Assets/shipifyy.png";
 import Khanaaa from "../../Assets/Khanaaa.png";
 import MobileApp from "../../Assets/MobileApp.png";
 
@@ -19,6 +20,14 @@ const projects = [
       "A personal AI Chatbot App built with React.js, designed to provide users with an interactive and engaging chatbot experience using OpenAI API.",
     link: "https://aadit-ai.netlify.app/",
     Github: "https://github.com/Aadityadav191/Personal-AI-Chatbot-App.git",
+  },
+  {
+    name: "shipify Website",
+    image: shipifyy,
+    Description:
+      " A shipify website built with React.js, designed to provide users with an interactive and engaging chatbot experience using OpenAI API.",
+    link: "https://shipifyy.netlify.app/",
+    Github: "https://github.com/Aadityadav191/shipifyy.git",
   },
   {
     name: "Dowry Calculator App",
@@ -37,14 +46,6 @@ const projects = [
     Github: "https://github.com/Aadityadav191/React-Dashboard.git",
   },
   {
-    name: "Food Ordering App",
-    image: Khanaaa,
-    Description:
-      "A basic food ordering app built with React and Context API for state management. Styled using CSS, this app allows users to browse a list of food items and manage their cart.",
-    link: "https://khanaaaa.netlify.app/",
-    Github: "https://github.com/Aadityadav191/FoodApp",
-  },
-  {
     name: "Coffee Website",
     image: Plant,
     Description:
@@ -52,6 +53,15 @@ const projects = [
     link: "https://himalayanjavacoffee.netlify.app/",
     Github: "https://github.com/Aadityadav191/Himalayan-Java-Coffee.git",
   },
+  {
+    name: "Food Ordering App",
+    image: Khanaaa,
+    Description:
+      "A basic food ordering app built with React and Context API for state management. Styled using CSS, this app allows users to browse a list of food items and manage their cart.",
+    link: "https://khanaaaa.netlify.app/",
+    Github: "https://github.com/Aadityadav191/FoodApp",
+  },
+  
   {
     name: "Portfolio Website",
     image: PortfolioIMG,

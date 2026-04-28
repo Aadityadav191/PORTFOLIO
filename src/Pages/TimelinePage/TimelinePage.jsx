@@ -17,7 +17,7 @@ const ExperienceTimeline = () => {
 
   const timelineData = [
     {
-      title: "Frontend Developer Intern",
+      title: "Working as a MERN Developer",
       company: "Zeenopay nepal",
       description: "Building impactful digital experiences and optimizing performance.",
       date: "2025 - Present",

@@ -15,11 +15,20 @@ import wordpress from "../../Assets/wordpress.png";
 import python from "../../Assets/python.png";
 
 import git from "../../Assets/git.png";
+import NodeJS from "../../Assets/NodeJS.jpg";
 
 import ReactNative from "../../Assets/ReactNative.png";
 import { motion } from "framer-motion";
 
 const skillsData = [
+   {
+    title: "MERN Stack",
+
+    logo: NodeJS,
+
+    description:
+      "Building the foundation for Full-Stack development by creating lightweight and efficient backend architectures.",
+  },
   {
     title: "ReactJS ",
 
@@ -82,6 +91,7 @@ const skillsData = [
     description:
       "Experienced in working with Git commands such as clone, commit, branch, merge, and pull to maintain and organize projects.",
   },
+ 
 ];
 
 export default function Skills() {
