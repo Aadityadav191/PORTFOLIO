@@ -26,8 +26,8 @@ function About() {
       skills: [
         "Web Development",
         "UI/UX Design",
-        "React Testing ",
-        "Performance Optimization",
+        "MERN Stack Development",
+        "Data Science",
       ],
     },
   ];

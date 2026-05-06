@@ -28,7 +28,7 @@ export default function Home() {
           </h1>
           
           <div className="role-container">
-            <span className="role-text">Software Developer</span>
+            <span className="role-text">Software Engineer</span>
             <div className="role-underline"></div>
           </div>
 
