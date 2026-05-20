@@ -2,7 +2,7 @@
 
 
 
-<h1> This project Live at:  https://aadityadav.netlify.app/</h1>
+<h1> This project Live at:  https://aadityadav.com.np/</h1>
 
 
 
