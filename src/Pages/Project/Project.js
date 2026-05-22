@@ -9,7 +9,7 @@ import PortfolioIMG from "../../Assets/PortfolioIMG.png";
 import Dowry from "../../Assets/Dowry.png";
 import ChatBot from "../../Assets/ChatBot.png";
 import shipifyy from "../../Assets/shipifyy.png";
-import Khanaaa from "../../Assets/Khanaaa.png";
+import Core from "../../Assets/Core.png";
 import MobileApp from "../../Assets/MobileApp.png";
 
 const projects = [
@@ -54,12 +54,12 @@ const projects = [
     Github: "https://github.com/Aadityadav191/Himalayan-Java-Coffee.git",
   },
   {
-    name: "Food Ordering App",
-    image: Khanaaa,
+    name: "Core Developers",
+    image: Core,
     Description:
-      "A basic food ordering app built with React and Context API for state management. Styled using CSS, this app allows users to browse a list of food items and manage their cart.",
-    link: "https://khanaaaa.netlify.app/",
-    Github: "https://github.com/Aadityadav191/FoodApp",
+      "Core Developers is a website built with React.js, designed to showcase the profiles and projects of core developers in the tech industry. It features a clean and modern design, allowing users to explore the contributions",
+    link: "https://Coredevelopers.org/",
+    Github: "https://github.com/Aadityadav191/Core-Developers-",
   },
   
   {
