@@ -6,7 +6,7 @@ import DashBoard from "../../Assets/DashBoard.png";
 import Plant from "../../Assets/Plant.png";
 import Bookrenting from "../../Assets/Bookrenting.png";
 import PortfolioIMG from "../../Assets/PortfolioIMG.png";
-import Dowry from "../../Assets/Dowry.png";
+// import Dowry from "../../Assets/Dowry.png";
 import ChatBot from "../../Assets/ChatBot.png";
 import shipifyy from "../../Assets/shipifyy.png";
 import Core from "../../Assets/Core.png";
@@ -29,14 +29,14 @@ const projects = [
     link: "https://shipifyy.netlify.app/",
     Github: "https://github.com/Aadityadav191/shipifyy.git",
   },
-  {
-    name: "Dowry Calculator App",
-    image: Dowry,
-    Description:
-      "A Dowry Calculator App built with React.js, designed to help users calculate and understand dowry amounts based on various parameters.",
-    link: "https://calculateyourdaijo.netlify.app/",
-    Github: "https://github.com/Aadityadav191/Calculate-Your-Dowry.git",
-  },
+  // {
+  //   name: "Dowry Calculator App",
+  //   image: Dowry,
+  //   Description:
+  //     "A Dowry Calculator App built with React.js, designed to help users calculate and understand dowry amounts based on various parameters.",
+  //   link: "https://calculateyourdaijo.netlify.app/",
+  //   Github: "https://github.com/Aadityadav191/Calculate-Your-Dowry.git",
+  // },
   {
     name: "React Dashboard",
     image: DashBoard,
