@@ -1,27 +1,18 @@
 import React from "react";
-
 import "./Skills.css";
-
 // import SkillsCards from "./../../Components/Cards/SkillsCards/SkillsCards.js";
-
 import Reactjs from "../../Assets/Reactjs.png";
-
 import nextjs from "../../Assets/nextjs.png";
-
 import UIUX from "../../Assets/UIUX.png";
-
 import wordpress from "../../Assets/wordpress.png";
-
 import python from "../../Assets/python.png";
-
 import git from "../../Assets/git.png";
 import NodeJS from "../../Assets/NodeJS.jpg";
-
 import ReactNative from "../../Assets/ReactNative.png";
 import { motion } from "framer-motion";
 
 const skillsData = [
-   {
+  {
     title: "MERN Stack",
 
     logo: NodeJS,
@@ -91,7 +82,6 @@ const skillsData = [
     description:
       "Experienced in working with Git commands such as clone, commit, branch, merge, and pull to maintain and organize projects.",
   },
- 
 ];
 
 export default function Skills() {
