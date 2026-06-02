@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import BlogCards from "../../Components/Blogs/BlogCards";
+import BlogCards from "../../Components/Cards/Blogs/BlogCards";
 import "./Blogs.css";
 
 export default function Blogs() {
@@ -8,7 +8,7 @@ export default function Blogs() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const MEDIUM_USERNAME = "@yaaditya191";
+  const MEDIUM_USERNAME = "@aadityadav_";
 
   useEffect(() => {
     const fetchMediumBlogs = async () => {
@@ -35,7 +35,7 @@ export default function Blogs() {
               image:
                 item.thumbnail ||
                 "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
-              tag: item.categories[0] || "Tech", // Pulls your first Medium tag
+              tag: item.categories[0] || "Tech",
               date: new Date(item.pubDate).toLocaleDateString("en-US", {
                 month: "short",
                 day: "numeric",
@@ -97,55 +97,57 @@ export default function Blogs() {
   }
 
   return (
-    <div className="blogs-page-wrapper">
-      <div className="blogs-container">
-        <header className="blogs-header">
-          <h1 className="Protitle">
-            Blogs / <u style={{ textDecorationColor: "#d18700" }}>Articles</u>
-          </h1>
-        </header>
+    <main id="Blogs" className="BlogsPage">
+      <div className="blogs-page-wrapper">
+        <div className="blogs-container">
+          <header className="blogs-header">
+            <h1 className="Protitle">
+              Blogs / <u style={{ textDecorationColor: "#d18700" }}>Articles</u>
+            </h1>
+          </header>
 
-        <div
-          className={`grid-wrapper-container ${!isExpanded ? "is-collapsed" : ""}`}
-        >
-          <main className="blogs-grid">
-            {visibleBlogs.map((blog) => (
-              <BlogCards
-                key={blog.id}
-                title={blog.title}
-                description={blog.description}
-                image={blog.image}
-                tag={blog.tag}
-                date={blog.date}
-                readTime={blog.readTime}
-                link={blog.link}
-              />
-            ))}
-          </main>
+          <div
+            className={`grid-wrapper-container ${!isExpanded ? "is-collapsed" : ""}`}
+          >
+            <main className="blogs-grid">
+              {visibleBlogs.map((blog) => (
+                <BlogCards
+                  key={blog.id}
+                  title={blog.title}
+                  description={blog.description}
+                  image={blog.image}
+                  tag={blog.tag}
+                  date={blog.date}
+                  readTime={blog.readTime}
+                  link={blog.link}
+                />
+              ))}
+            </main>
 
-          {!isExpanded && blogData.length > 4 && (
-            <div className="blogs-fade-overlay">
+            {!isExpanded && blogData.length > 4 && (
+              <div className="blogs-fade-overlay">
+                <button
+                  className="see-more-btn"
+                  onClick={() => setIsExpanded(true)}
+                >
+                  See More Articles
+                </button>
+              </div>
+            )}
+          </div>
+
+          {isExpanded && (
+            <div className="show-less-wrapper">
               <button
-                className="see-more-btn"
-                onClick={() => setIsExpanded(true)}
+                className="see-more-btn show-less-variant"
+                onClick={() => setIsExpanded(false)}
               >
-                See More Articles
+                Show Less
               </button>
             </div>
           )}
         </div>
-
-        {isExpanded && (
-          <div className="show-less-wrapper">
-            <button
-              className="see-more-btn show-less-variant"
-              onClick={() => setIsExpanded(false)}
-            >
-              Show Less
-            </button>
-          </div>
-        )}
       </div>
-    </div>
+    </main>
   );
 }
