@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skills.css";
-// import SkillsCards from "./../../Components/Cards/SkillsCards/SkillsCards.js";
 import Reactjs from "../../Assets/Reactjs.png";
 import nextjs from "../../Assets/nextjs.png";
 import UIUX from "../../Assets/UIUX.png";
@@ -9,78 +8,54 @@ import python from "../../Assets/python.png";
 import git from "../../Assets/git.png";
 import NodeJS from "../../Assets/NodeJS.jpg";
 import ReactNative from "../../Assets/ReactNative.png";
+import docker from "../../Assets/docker.png"; // Added Docker asset import
 import { motion } from "framer-motion";
 
 const skillsData = [
   {
     title: "MERN Stack",
-
     logo: NodeJS,
-
-    description:
-      "Building the foundation for Full-Stack development by creating lightweight and efficient backend architectures.",
+    description: "Building efficient backend and full-stack architectures.",
   },
   {
-    title: "ReactJS ",
-
+    title: "ReactJS",
     logo: Reactjs,
-
-    description:
-      "Skilled in building responsive web apps with React.js, using components, hooks, and state management.",
+    description: "Building responsive web apps with components and hooks.",
   },
-
   {
-    title: "NextJS ",
-
+    title: "NextJS",
     logo: nextjs,
-
-    description:
-      "Experienced in building fast, SEO-friendly web applications, leveraging server-side rendering, dynamic routing.",
+    description: "Fast, SEO-friendly apps with SSR and dynamic routing.",
   },
-
   {
-    title: "Python (django) ",
-
+    title: "Python (Django)",
     logo: python,
-
-    description:
-      "Building applications using Django, with expertise in RESTful APIs, database integration, and backend optimization.",
+    description: "RESTful APIs and optimized backend integrations.",
   },
-
   {
     title: "UI/UX Design",
-
     logo: UIUX,
-
-    description:
-      "Proficient in crafting visually appealing interfaces, focusing on user-centric design and seamless experiences in figma ",
+    description: "Crafting modern, user-centric experiences in Figma.",
   },
-
   {
-    title: "React Native ",
-
+    title: "React Native",
     logo: ReactNative,
-
-    description:
-      "Skilled in building cross-platform mobile apps with React Native, using components, hooks, and native modules.",
+    description: "Cross-platform mobile apps with native capabilities.",
   },
-
   {
-    title: "WordPress ",
-
+    title: "WordPress",
     logo: wordpress,
-
-    description:
-      "Experienced in creating and customizing WordPress websites, optimizing themes, plugins, and performance.",
+    description: "Customizing themes, plugins, and site performance.",
   },
-
+  {
+    title: "Docker",
+    logo: docker,
+    description: "Containerizing applications for seamless deployment.",
+  },
   {
     title: "GIT",
-
     logo: git,
-
-    description:
-      "Experienced in working with Git commands such as clone, commit, branch, merge, and pull to maintain and organize projects.",
+    description: "Version control, branching, and team collaboration.",
   },
 ];
 
@@ -89,13 +64,13 @@ export default function Skills() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.1 },
+      transition: { staggerChildren: 0.05 },
     },
   };
 
-  const cardVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
+  const itemVariants = {
+    hidden: { x: -20, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
   };
 
   return (
@@ -108,25 +83,24 @@ export default function Skills() {
       </div>
 
       <motion.div
-        className="skillsGrid"
+        className="skillsListGrid"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {skillsData.map((skill, index) => (
           <motion.div
             key={index}
-            variants={cardVariants}
-            className="skill-card-wrapper"
+            variants={itemVariants}
+            className="skill-list-item"
           >
-            <div className="skill-card-inner">
-              <div className="icon-box">
-                <img src={skill.logo} alt={skill.title} />
-              </div>
+            <div className="small-icon-box">
+              <img src={skill.logo} alt={skill.title} />
+            </div>
+            <div className="skill-text">
               <h3>{skill.title}</h3>
               <p>{skill.description}</p>
-              <div className="card-glow"></div>
             </div>
           </motion.div>
         ))}
