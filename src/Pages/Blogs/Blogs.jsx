@@ -11,55 +11,62 @@ export default function Blogs() {
   const MEDIUM_USERNAME = "@aadityadav_";
 
   useEffect(() => {
-    const fetchMediumBlogs = async () => {
-      try {
-        // We use the rss2json API converter to turn Medium's XML feed into clean JSON
-        const response = await fetch(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${MEDIUM_USERNAME}`,
-        );
-        const data = await response.json();
+  const fetchMediumBlogs = async () => {
+    try {
+      const response = await fetch(
+        `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${MEDIUM_USERNAME}`,
+      );
+      const data = await response.json();
 
-        if (data.status === "ok") {
-          // Format Medium's layout data to fit your Card component properties perfectly
-          const formattedBlogs = data.items.map((item, index) => {
-            // Quick cleanup to extract a clean string from Medium's full HTML content
-            const cleanDescription =
-              item.content
-                .replace(/<[^>]*>/g, "") // Strips HTML tags
-                .substring(0, 140) + "...";
+      if (data.status === "ok") {
+        const formattedBlogs = data.items.map((item, index) => {
+          // 1. EXTRACTION: Find the first <img> tag src in Medium's content
+          const imgRegex = /<img[^>]+src="([^">]+)"/;
+          const match = item.content.match(imgRegex);
+          const extractedImage = match ? match[1] : null;
 
-            return {
-              id: index,
-              title: item.title,
-              description: cleanDescription,
-              image:
-                item.thumbnail ||
-                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
-              tag: item.categories[0] || "Tech",
-              date: new Date(item.pubDate).toLocaleDateString("en-US", {
-                month: "short",
-                day: "numeric",
-                year: "numeric",
-              }),
-              readTime: "Read Article",
-              link: item.link,
-            };
-          });
+          // 2. CLEANUP: Strip HTML tags for the text snippet
+          const cleanDescription =
+            item.content
+              .replace(/<[^>]*>/g, "") // Strips HTML tags
+              .substring(0, 140) + "...";
 
-          setBlogData(formattedBlogs);
-        } else {
-          setError(true);
-        }
-      } catch (err) {
-        console.error("Error fetching Medium RSS feed:", err);
+          return {
+            id: index,
+            title: item.title,
+            description: cleanDescription,
+            // 3. FALLBACK: Use extracted image, then item.thumbnail, then Unsplash placeholder
+            image:
+              extractedImage ||
+              item.thumbnail ||
+              "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
+            tag: item.categories[0] || "Tech",
+            date: new Date(item.pubDate).toLocaleDateString("en-US", {
+              month: "short",
+              day: "numeric",
+              year: "numeric",
+            }),
+            readTime: "Read Article",
+            link: item.link,
+          };
+        });
+
+        setBlogData(formattedBlogs);
+      } else {
         setError(true);
-      } finally {
-        setIsLoading(false);
       }
-    };
+    } catch (err) {
+      console.error("Error fetching Medium RSS feed:", err);
+      setError(true);
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+    }
+  };
 
-    fetchMediumBlogs();
-  }, [MEDIUM_USERNAME]);
+  fetchMediumBlogs();
+}, [MEDIUM_USERNAME]);
   const visibleBlogs = isExpanded ? blogData : blogData.slice(0, 4);
 
   if (isLoading) {
@@ -72,7 +79,7 @@ export default function Blogs() {
           alignItems: "center",
         }}
       >
-        <h2 style={{ color: "#fff" }}>
+        <h2 style={{ color: "#d18700" }}>
           Fetching latest articles from Medium...
         </h2>
       </div>
