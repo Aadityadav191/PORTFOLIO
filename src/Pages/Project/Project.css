@@ -1,56 +1,106 @@
 .ProjectPage {
-  background: radial-gradient(circle, #2b3b4e, #263343);
-  padding: 40px;
-  height: 100vh;
+  background: #111a22; /* Matches your About and Stack components */
+  padding: 100px 5% 80px 5%;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-@media (max-width: 1920px) {
-  .ProjectPage {
-    padding: 35px;
-    height: auto;
-  }
-}
-
-@media (max-width: 1440px) {
-  .ProjectPage {
-    padding: 30px;
-    height: auto;
-  }
-}
-
-@media (max-width: 1024px) {
-  .ProjectPage {
-    padding: 20px;
-    height: auto;
-  }
-}
-
-/* For very small mobile devices (max-width: 480px) */
-@media screen and (max-width: 480px) {
-  .ProjectPage {
-    padding: 15px;
-    height: auto;
-  }
+/* Modern Header Alignment */
+.project-header-section {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .Protitle {
-  font-family: cursive;
-  color: aliceblue;
-  margin-bottom: 4%;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.Protitle .accent {
+  color: #d18700;
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background: #d18700;
+  margin: 0 auto;
+  border-radius: 2px;
 }
 
 .project {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .projectscards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+/* See More Button Wrapper and Styling */
+.see-more-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
   justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.see-more-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  padding: 12px 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.see-more-btn:hover {
+  background: #d18700;
+  color: #111a22;
+  border-color: #d18700;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(209, 135, 0, 0.3);
+}
+
+.see-more-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 1024px) {
+  .ProjectPage {
+    padding: 80px 4% 60px 4%;
+  }
+  .projectscards {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ProjectPage {
+    padding: 60px 16px 40px 16px;
+  }
+  .projectscards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .see-more-btn {
+    padding: 10px 26px;
+    font-size: 0.95rem;
+  }
 }
