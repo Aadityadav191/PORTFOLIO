@@ -7,13 +7,15 @@ import shipifyy from "../Assets/shipifyy.png";
 import Core from "../Assets/Core.png";
 import MobileApp from "../Assets/MobileApp.png";
 import Project3 from "../Assets/Project3.png";
+import Project4 from "../Assets/news-portal.png";
 
 export const projects = [
   {
     id: 1,
     name: "Shipify Website",
     image: shipifyy,
-    description: "A modern shipping and logistics website built with React.js featuring responsive design and smooth user experience.",
+    description:
+      "A modern shipping and logistics website built with React.js featuring responsive design and smooth user experience using React Router and Framer Motion for animations and transitions",
     link: "https://shipifyy.netlify.app/",
     github: "https://github.com/Aadityadav191/shipifyy.git",
     techStack: ["React", "CSS", "JavaScript"],
@@ -24,7 +26,8 @@ export const projects = [
     id: 2,
     name: "E-Commerce Website",
     image: Project3,
-    description: "A fully responsive e-commerce platform with product listings, modern UI, and seamless shopping experience.",
+    description:
+      "A fully responsive e-commerce platform with product listings, modern UI, and seamless shopping experience using MERN Stack..",
     link: "https://bazaaaaar.netlify.app/",
     github: "https://github.com/Aadityadav191/Bazaar.com.git",
     techStack: ["React", "CSS", "JavaScript"],
@@ -35,18 +38,28 @@ export const projects = [
     id: 3,
     name: "Core Developers",
     image: Core,
-    description: "A professional company website built with React.js showcasing services, projects, and team information.",
+    description:
+      "A professional company website built with React.js showcasing services, projects, and team information.",
     link: "https://Coredevelopers.org/",
     github: "https://github.com/Aadityadav191/Core-Developers-",
-    techStack: ["React", "CSS", "JavaScript"],
     featured: true,
   },
-
   {
     id: 4,
+    name: "News Portal",
+    image: Project4,
+    description:
+      "A modern news portal with real-time updates, and Different Role-Based Access.Pending Approval by authorized users to author and News Articles to Published Using MERN Stack.",
+    link: "https://news-portal-np.netlify.app/",
+    github: "https://github.com/Aadityadav191/NewsPortal_backend-.git",
+    featured: true,
+  },
+  {
+    id: 5,
     name: "React Dashboard",
     image: DashBoard,
-    description: "A dynamic admin dashboard with analytics, charts, and interactive UI components.",
+    description:
+      "A dynamic admin dashboard with analytics, charts, and interactive UI components.",
     link: "https://react-dashboard-adminpannel.netlify.app/",
     github: "https://github.com/Aadityadav191/React-Dashboard.git",
     techStack: ["React", "CSS", "Charts"],
@@ -54,10 +67,11 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Personal AI Chatbot",
     image: ChatBot,
-    description: "An AI-powered chatbot application with a modern interface and interactive conversation experience.",
+    description:
+      "An AI-powered chatbot application with a modern interface and interactive conversation experience.",
     link: "https://aadit-ai.netlify.app/",
     github: "https://github.com/Aadityadav191/Personal-AI-Chatbot-App.git",
     techStack: ["React", "AI API", "JavaScript"],
@@ -65,10 +79,11 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Coffee Website",
     image: Plant,
-    description: "A responsive coffee shop website inspired by Himalayan Java, featuring elegant UI and smooth navigation.",
+    description:
+      "A responsive coffee shop website inspired by Himalayan Java, featuring elegant UI and smooth navigation.",
     link: "https://himalayanjavacoffee.netlify.app/",
     github: "https://github.com/Aadityadav191/Himalayan-Java-Coffee.git",
     techStack: ["React", "CSS", "JavaScript"],
@@ -76,10 +91,11 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     name: "Portfolio Website",
     image: PortfolioIMG,
-    description: "A personal portfolio website showcasing projects, skills, and professional experience.",
+    description:
+      "A personal portfolio website showcasing projects, skills, and professional experience.",
     link: "https://aadityadav.netlify.app/",
     github: "https://github.com/Aadityadav191/React-Dashboard.git",
     techStack: ["React", "Framer Motion", "CSS"],
@@ -87,10 +103,11 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Book Renting Website",
     image: Bookrenting,
-    description: "A user-friendly book rental platform designed to simplify book discovery and rental management.",
+    description:
+      "A user-friendly book rental platform designed to simplify book discovery and rental management.",
     link: "https://RentaBook.netlify.app/",
     github: "https://github.com/Aadityadav191/React-Dashboard.git",
     techStack: ["React", "CSS", "JavaScript"],
@@ -98,10 +115,11 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     name: "Mobile App",
     image: MobileApp,
-    description: "A cross-platform mobile application focused on delivering a smooth and responsive user experience.",
+    description:
+      "A cross-platform mobile application focused on delivering a smooth and responsive user experience.",
     github: "https://github.com/Aadityadav191/Mobile-APP.git",
     techStack: ["React Native", "Mobile Development"],
     featured: false,

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BlogCards from "../../Components/Cards/Blogs/BlogCards";
 import "./Blogs.css";
+import { fetchMediumBlogs } from "../../services/blogService";
 
 export default function Blogs() {
   const [blogData, setBlogData] = useState([]);
@@ -8,65 +9,24 @@ export default function Blogs() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const MEDIUM_USERNAME = "@aadityadav_";
-
   useEffect(() => {
-    const fetchMediumBlogs = async () => {
-      try {
-        const response = await fetch(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${MEDIUM_USERNAME}`,
-        );
-        const data = await response.json();
+  const loadBlogs = async () => {
+    try {
+      const blogs = await fetchMediumBlogs();
+      setBlogData(blogs);
+    } catch (err) {
+      console.error("Error fetching Medium RSS feed:", err);
+      setError(true);
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+    }
+  };
 
-        if (data.status === "ok") {
-          const formattedBlogs = data.items.map((item, index) => {
-            // 1. EXTRACTION: Find the first <img> tag src in Medium's content
-            const imgRegex = /<img[^>]+src="([^">]+)"/;
-            const match = item.content.match(imgRegex);
-            const extractedImage = match ? match[1] : null;
+  loadBlogs();
+}, []);
 
-            // 2. CLEANUP: Strip HTML tags for the text snippet
-            const cleanDescription =
-              item.content
-                .replace(/<[^>]*>/g, "") // Strips HTML tags
-                .substring(0, 140) + "...";
-
-            return {
-              id: index,
-              title: item.title,
-              description: cleanDescription,
-              // 3. FALLBACK: Use extracted image, then item.thumbnail, then Unsplash placeholder
-              image:
-                extractedImage ||
-                item.thumbnail ||
-                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600",
-              tag: item.categories[0] || "Tech",
-              date: new Date(item.pubDate).toLocaleDateString("en-US", {
-                month: "short",
-                day: "numeric",
-                year: "numeric",
-              }),
-              readTime: "Read Article",
-              link: item.link,
-            };
-          });
-
-          setBlogData(formattedBlogs);
-        } else {
-          setError(true);
-        }
-      } catch (err) {
-        console.error("Error fetching Medium RSS feed:", err);
-        setError(true);
-      } finally {
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 2000);
-      }
-    };
-
-    fetchMediumBlogs();
-  }, [MEDIUM_USERNAME]);
   const visibleBlogs = isExpanded ? blogData : blogData.slice(0, 4);
 
   if (isLoading) {
