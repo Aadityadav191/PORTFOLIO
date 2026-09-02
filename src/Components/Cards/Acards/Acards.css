@@ -1,66 +1,46 @@
-
-.Aparent {
-  width: 300px;
-  padding: 15px;
-  perspective: 1000px;
+/* From Uiverse.io by codebykay101 */ 
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Acard {
-  padding-top: 30px;
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
   border-radius: 10px;
-  border: 3px solid #d18800ba;
-  transform-style: preserve-3d;
-  background-size: 60px 60px;
-  background-position: 0 0, 0 0;
-  background-color: #1c293900;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  transition: all 0.5s ease-in-out;
-  box-shadow: 5px 5px 8px  0px  rgb(10, 12, 12);
-
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
-
-.Acard:hover {
-  background-position: -100px 100px, -100px 100px;
-  transform: rotate3d(0.5, 1, 0, 30deg);
-}
-
-.content-box {
-  background-color:  #1c2939;
-  border-radius: 10px 100px 10px 10px;
-  transition: all 0.5s ease-in-out;
-  padding: 25px 25px 25px 25px;
-  transform-style: preserve-3d;
-}
-
-.content-box .card-title {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  font-weight: 900;
-  transition: all 0.5s ease-in-out;
-  transform: translate3d(0px, 0px, 50px);
-  font-family: cursive;
-}
-
-.content-box .card-title:hover {
-  transform: translate3d(0px, 0px, 60px);
-}
-
-.content-box .card-content {
-  margin-top: 10px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #ffffff;
-  transition: all 0.5s ease-in-out;
-  transform: translate3d(0px, 0px, 30px);
-}
-
-.content-box .card-content:hover {
-  transform: translate3d(0px, 0px, 60px);
-}
-
-
-
-.content-box .see-more:hover {
-  transform: translate3d(0px, 0px, 60px);
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
 }

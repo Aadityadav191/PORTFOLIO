@@ -1,10 +1,10 @@
 import React from "react";
 import "./About.css";
-import Acards from "../../Components/Cards/Acards/Acards.js";
+// import Acards from "../../Components/Cards/Acards/Acards.js";
 import { IconCloud } from "../../Components/IconCloud/IconCloud.jsx";
 import { motion } from "framer-motion";
 
-import { cardData, iconSlugs, aboutText } from "../../data/about.js";
+import { iconSlugs, aboutText } from "../../data/about.js";
 
 function About() {
   return (
@@ -49,11 +49,11 @@ function About() {
         </motion.div>
       </section>
 
-      <section className="Acards">
+      {/* <section className="Acards">
         {cardData.map((card) => (
           <Acards key={card.title} Title={card.title} skills={card.skills} />
         ))}
-      </section>
+      </section> */}
     </main>
   );
 }
