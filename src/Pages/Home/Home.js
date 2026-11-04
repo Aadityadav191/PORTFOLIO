@@ -4,94 +4,83 @@ import ShapeDivider from "../../Components/ShapeDivider/ShapeDivider.js";
 import Socialicon from "../../Components/Socialicon/Socialicon.js";
 import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
 import shyam1 from "../../Assets/9999.jpeg";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+
+const ROLES = ["Software Engineer", "Full-Stack Developer", "Tech Enthusiast"];
 
 export default function Home() {
-  const roles = ["Software Engineer", "Full-Stack Developer", "Tech Enthusiast"];
-  const [currentRoleIdx, setCurrentRoleIdx] = useState(0);
+  const [roleIdx, setRoleIdx] = useState(0);
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentRoleIdx((prev) => (prev + 1) % roles.length);
-    }, 3500);
-    return () => clearInterval(interval);
-  }, [roles.length]);
+    const id = setInterval(() => setRoleIdx((i) => (i + 1) % ROLES.length), 3200);
+    return () => clearInterval(id);
+  }, []);
+
+
+  const container = {
+    hidden: {},
+    show: { transition: { staggerChildren: reduceMotion ? 0 : 0.09 } },
+  };
+  const item = {
+    hidden: { opacity: reduceMotion ? 1 : 0, y: reduceMotion ? 0 : 18 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  };
 
   return (
-    <main className="landing" id="home">
-      <div className="bg-glow-1"></div>
-      <div className="bg-glow-2"></div>
-      <div className="bg-grid-overlay"></div>
+    <main className="hm" id="home">
+      <div className="hm-shell">
+        <motion.div className="hm-copy" variants={container} initial="hidden" animate="show">
 
-      <section className="hero-grid">
-        <motion.div 
-          className="hero-content"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+          <motion.h1 variants={item} className="hm-name">
+            Aadit Yadav
+          </motion.h1>
 
-          <h5 className="greeting">Hi there, my name is</h5>
-          <h1 className="name-title">
-            Aadit <span className="highlight">Yadav</span>
-          </h1>
-          
-          {/* Animated Role Text Carousel */}
-          <div className="role-container">
-            <AnimatePresence mode="wait">
-              <motion.span 
-                key={currentRoleIdx}
-                className="role-text"
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -15 }}
-                transition={{ duration: 0.4 }}
-              >
-                {roles[currentRoleIdx]}
-              </motion.span>
-            </AnimatePresence>
-          </div>
-
-          <p className="hero-description">
-            I craft scalable web applications and high-performance digital experiences with an unwavering focus on clean architecture and intuitive user design.
-          </p>
-
-          <div className="cta-group">
-            <DownloadBtn />
-            <div className="social-container">
-               <Socialicon />
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div 
-          className="hero-image-wrapper"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        >
-          {/* Professional Minimalist Geometric Frame */}
-          <div className="image-frame-deco"></div>
-          <div className="image-border-gradient">
-            <div className="image-inner-container">
-                <img src={shyam1} className="profile-img" alt="Aadit Yadav" />
-            </div>
-          </div>
-          
-          {/* Ultra-Modern Glassmorphic Floating Card */}
-          <motion.div 
-            className="floating-card"
-            animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <div className="card-accent"></div>
-            <span className="stat-number">10+</span>
-            <span className="stat-text">Production Projects</span>
+          <motion.div variants={item} className="hm-role" aria-live="polite">
+            <span className="hm-role-prefix">I'm a</span>
+            <span className="hm-role-window">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={roleIdx}
+                  className="hm-role-text"
+                  initial={{ opacity: 0, y: reduceMotion ? 0 : "60%" }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: reduceMotion ? 0 : "-60%" }}
+                  transition={{ duration: 0.35 }}
+                >
+                  {ROLES[roleIdx]}
+                </motion.span>
+              </AnimatePresence>
+            </span>
           </motion.div>
-        </motion.div>
-      </section>
 
-      <div className="divider-container">
+          <motion.p variants={item} className="hm-desc">
+            I build scalable web applications and fast, reliable digital products, with a focus on
+            clean architecture and interfaces that are easy to use.
+          </motion.p>
+
+          <motion.div variants={item} className="hm-actions">
+            <DownloadBtn />
+            <Socialicon />
+          </motion.div>
+
+        </motion.div>
+
+        <motion.div
+          className="hm-visual"
+          initial={{ opacity: 0, scale: reduceMotion ? 1 : 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div className="hm-photo-offset" aria-hidden="true" />
+          <figure className="hm-photo">
+            <img src={shyam1} alt="Portrait of Aadit Yadav" />
+          </figure>
+          
+        </motion.div>
+      </div>
+
+      <div className="hm-divider">
         <ShapeDivider />
       </div>
     </main>

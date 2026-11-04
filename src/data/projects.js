@@ -40,7 +40,7 @@ export const projects = [
     image: Core,
     description:
       "A professional company website built with React.js showcasing services, projects, and team information.",
-    link: "https://Coredevelopers.org/",
+    link: "https://Coredevelopers.com.np/",
     github: "https://github.com/Aadityadav191/Core-Developers-",
     featured: true,
   },
