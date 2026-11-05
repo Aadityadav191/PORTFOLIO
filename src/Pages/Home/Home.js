@@ -6,7 +6,7 @@ import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
 import shyam1 from "../../Assets/9999.jpeg";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
-const ROLES = ["Software Engineer", "Full-Stack Developer", "Tech Enthusiast"];
+const ROLES = ["Software Developer", "Full-Stack Developer", "Tech Enthusiast"];
 
 export default function Home() {
   const [roleIdx, setRoleIdx] = useState(0);
@@ -37,7 +37,7 @@ export default function Home() {
           </motion.h1>
 
           <motion.div variants={item} className="hm-role" aria-live="polite">
-            <span className="hm-role-prefix">I'm a</span>
+            <span className="hm-role-prefix">a</span>
             <span className="hm-role-window">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -55,8 +55,7 @@ export default function Home() {
           </motion.div>
 
           <motion.p variants={item} className="hm-desc">
-            I build scalable web applications and fast, reliable digital products, with a focus on
-            clean architecture and interfaces that are easy to use.
+           Architecting fast, reliable digital products so you never have to see a 404 page again. Clean code on the inside, eye candy on the outside..
           </motion.p>
 
           <motion.div variants={item} className="hm-actions">

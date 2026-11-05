@@ -3,16 +3,16 @@ html {
 }
 
 .navbar.custom-nav {
-    top: 20px; /* Gives it a floating look */
-    position: fixed; /* Keeps it visible as you scroll */
+    top: 20px;
+    position: fixed; 
     left: 50%;
-    transform: translateX(-50%); /* Centers the absolute element */
-    width: fit-content; /* Makes it only as wide as the links */
-    background-color: #182235e2; /* Slight transparency */
-    backdrop-filter: blur(0px); /* Modern frosted glass effect */
-    border-radius: 50px; /* Makes it a pill shape */
-    padding: 10px 30px;
-    border: 1px solid rgba(209, 135, 0, 0.3);
+    transform: translateX(-50%);    
+    width: fit-content; 
+    background-color: #182235e2;    
+    backdrop-filter: blur(0px);     
+    border-radius: 50px;    
+    padding: 5px 30px;
+    border: 3px solid rgba(209, 135, 0, 0.3);
     z-index: 1000;
     
 }
@@ -23,7 +23,7 @@ html {
 }
 
 .navbar-nav {
-    flex-direction: row !important; /* Forces items to stay horizontal */
+    flex-direction: row !important;     
     gap: 20px;
 }
 
@@ -38,7 +38,6 @@ html {
     color: #d18700 !important;
 }
 
-/* Hide brand and toggler for this specific "short" style */
 .navbar-toggler {
     display: none !important;
 }
