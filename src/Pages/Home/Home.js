@@ -6,7 +6,7 @@ import DownloadBtn from "../../Components/Buttons/DownloadBtn/DownloadBtn.js";
 import shyam1 from "../../Assets/9999.jpeg";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
-const ROLES = ["Software Developer", "Full-Stack Developer", "Tech Enthusiast"];
+const ROLES = ["Software Developer", "Full-Stack Developer","Freelancer", "Tech Enthusiast"];
 
 export default function Home() {
   const [roleIdx, setRoleIdx] = useState(0);
